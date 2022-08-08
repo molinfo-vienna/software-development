@@ -6,5 +6,5 @@ Most of the recommendations are public, but there are also private ones.
 
 | Syntax      | Description |
 | ----------- | ----------- |
-| Continuous deployment      | https://github.com/molinfo-vienna/wiki/CONTINUOUS_DEPLOYMENT.md       |
+| Continuous deployment      | https://github.com/molinfo-vienna/private_wiki/CONTINUOUS_DEPLOYMENT.md       |
 | Unit testing   | https://github.com/molinfo-vienna/wiki/UNIT_TESTING.md        |
