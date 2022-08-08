@@ -6,8 +6,8 @@ The official MolInfo-Vienna guidline for modern molecular informaticians to keep
 ## Table of Contents
 | Link | Description |
 | ----------- | ----------- |
-| [__Scope of this guide__](): |  |
-| [__Version Control__](): |      |
-| [__How to structure your project__](): |       |
-| [__Continuous deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):|        |
-| [__Unit testing__](https://github.com/molinfo-vienna/wiki/UNIT_TESTING.md):   |        |
+| [__Scope of this guide__](): | A short description on the who should read this guide |
+| [__Version Control__](): |  Principles behind VC-Systems  |
+| [__How to structure your project__](): | A good structure is key to your success  |
+| [__Continuous deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):|  |
+| [__Unit testing__](https://github.com/molinfo-vienna/wiki/UNIT_TESTING.md):   | Testing your code makes is essential for resuability |
