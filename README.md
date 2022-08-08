@@ -1,4 +1,3 @@
-# wiki
 # The public best-practice page for the Molecular Informatics group at the University of Vienna
 
 The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch than the how to set up their repository.
