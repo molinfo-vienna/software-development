@@ -4,6 +4,7 @@
 The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch than the how to set up their repository.
 
 ## Table of Contents
+| Link | Description |
 | ----------- | ----------- |
 | [__Scope of this guide__](): |  |
 | [__Version Control__](): |      |
