@@ -2,10 +2,10 @@ This setup guide is for everyone wanting to setup their project quickly and easi
 
 1. Get a proper IDE
 
-    We recommend donwloading and installing ==VS Code== for your project.
+    We recommend donwloading and installing <mark>VS Code</mark> for your project.
     There are numerous other IDEs (e.g. PyChamr, Spyer,...) but VS Code is lightweight and can be extended easily to the favour of your choice.
 
-    To install our recommendation go to [VS Code Homepage](https://code.visualstudio.com/download) to download the IDE and install it
+    To donwload and install our recommendation go to [VS Code Homepage](https://code.visualstudio.com/download). Follow the instructions for your operating system.
 
 2. Setup your python package manager
 
