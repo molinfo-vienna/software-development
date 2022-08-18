@@ -5,24 +5,41 @@ The official MolInfo-Vienna guidline for modern molecular informaticians to keep
 
 # Content of the guide
 
-## [__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/PURPOSE.md):
+[__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/PURPOSE.md):
 
-## [__Quick Setup__](https://github.com/molinfo-vienna/wiki/QUICK_SETUP.md):
+Who should read this guide and why its important
 
-## [__Licencing__](https://github.com/molinfo-vienna/wiki/LICENCING.md):
+[__Quick Setup__](https://github.com/molinfo-vienna/wiki/QUICK_SETUP.md):
 
-## [__Project Structure__](https://github.com/molinfo-vienna/wiki/LICENCING.md):
+For everyone interested in getting started right away
 
-## [__Version Control__](https://github.com/molinfo-vienna/wiki/VERSION_CONTROL.md): 
+[__Licencing__](https://github.com/molinfo-vienna/wiki/LICENCING.md):
 
-## [__Testing__](https://github.com/molinfo-vienna/wiki/UNIT_TESTING.md):
+Choose a proper licence
 
-## [__Continuous Integration__](https://github.com/molinfo-vienna/wiki/CONTINUOUS_INTEGRATION.md):
+[__Project Structure__](https://github.com/molinfo-vienna/wiki/LICENCING.md):
 
-## [__Documentation__](https://github.com/molinfo-vienna/wiki/DOCUMENTATION.md):
+The key to a successful project is structure
 
-## [__Packaging and Continuous Deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):
+[__Version Control__](https://github.com/molinfo-vienna/wiki/VERSION_CONTROL.md): 
 
+The main idea behind version control
+
+[__Testing__](https://github.com/molinfo-vienna/wiki/UNIT_TESTING.md):
+
+Make sure your code does what you want it to do
+
+[__Continuous Integration__](https://github.com/molinfo-vienna/wiki/CONTINUOUS_INTEGRATION.md):
+
+Make sure new code does not break your code
+
+[__Documentation__](https://github.com/molinfo-vienna/wiki/DOCUMENTATION.md):
+
+Make it easier for you and collaborators to understand what your code tries to achieve
+
+[__Packaging and Continuous Deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):
+
+Make it easy for collaborators to use your code
 
 # Target audience
 
