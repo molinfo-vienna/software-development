@@ -5,35 +5,35 @@ The official MolInfo-Vienna guidline for modern molecular informaticians to keep
 
 # Content of the guide
 
-[__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/PURPOSE.md):
+[__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/main/PURPOSE.md):
 
 Who should read this guide and why its important
 
-[__Quick Setup__](https://github.com/molinfo-vienna/wiki/blob/QUICK_SETUP.md):
+[__Quick Setup__](https://github.com/molinfo-vienna/wiki/blob/main/QUICK_SETUP.md):
 
 For everyone interested in getting started right away
 
-[__Licencing__](https://github.com/molinfo-vienna/wiki/blob/LICENCING.md):
+[__Licencing__](https://github.com/molinfo-vienna/wiki/blob/main/LICENCING.md):
 
 Choose a proper licence
 
-[__Project Structure__](https://github.com/molinfo-vienna/wiki/blob/LICENCING.md):
+[__Project Structure__](https://github.com/molinfo-vienna/wiki/blob/main/LICENCING.md):
 
 The key to a successful project is structure
 
-[__Version Control__](https://github.com/molinfo-vienna/wiki/blob/VERSION_CONTROL.md): 
+[__Version Control__](https://github.com/molinfo-vienna/wiki/blob/main/VERSION_CONTROL.md): 
 
 The main idea behind version control
 
-[__Testing__](https://github.com/molinfo-vienna/wiki/blob/UNIT_TESTING.md):
+[__Testing__](https://github.com/molinfo-vienna/wiki/blob/main/UNIT_TESTING.md):
 
 Make sure your code does what you want it to do
 
-[__Continuous Integration__](https://github.com/molinfo-vienna/wiki/blob/CONTINUOUS_INTEGRATION.md):
+[__Continuous Integration__](https://github.com/molinfo-vienna/wiki/blob/main/CONTINUOUS_INTEGRATION.md):
 
 Make sure new code does not break your code
 
-[__Documentation__](https://github.com/molinfo-vienna/wiki/blob/DOCUMENTATION.md):
+[__Documentation__](https://github.com/molinfo-vienna/wiki/blob/main/DOCUMENTATION.md):
 
 Make it easier for you and collaborators to understand what your code tries to achieve
 
@@ -53,4 +53,4 @@ Be sure to check out these related guides and materials:
 * [MolSSI Education resources](https://molssi-education.github.io/resources.html)
 * [Software Sustainability Institute Guides](https://software.ac.uk/resources/guides)
 
-__Next Chapter:__ [__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/additional_readme/PURPOSE.md)
+__Next Chapter:__ [__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/main/PURPOSE.md)
