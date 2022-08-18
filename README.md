@@ -2,15 +2,29 @@
 
 The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch than the how to set up their repository.
 
-## Table of Contents
-| Link | Description |
-| ----------- | ----------- |
-| [__Scope of this guide__](https://github.com/molinfo-vienna/wiki/SCOPE.md): | A short description on the who should read this guide |
-| [__Version Control__](https://github.com/molinfo-vienna/wiki/VERSION_CONTROL.md): |  Principles behind VC-Systems  |
-| [__How to structure your project__](https://github.com/molinfo-vienna/wiki/PROJECT_STRUCTURE.md): | A good structure is key to your success  |
-| [__Continuous deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):|  |
-| [__Unit testing__](https://github.com/molinfo-vienna/wiki/UNIT_TESTING.md):   | Testing your code makes is essential for resuability |
 
+# Content of the guide
+
+## [__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/PURPOSE.md):
+
+## [__Quick Setup__](https://github.com/molinfo-vienna/wiki/QUICK_SETUP.md):
+
+## [__Licencing__](https://github.com/molinfo-vienna/wiki/LICENCING.md):
+
+## [__Project Structure__](https://github.com/molinfo-vienna/wiki/LICENCING.md):
+
+## [__Version Control__](https://github.com/molinfo-vienna/wiki/VERSION_CONTROL.md): 
+
+## [__Testing__](https://github.com/molinfo-vienna/wiki/UNIT_TESTING.md):
+
+## [__Continuous Integration__](https://github.com/molinfo-vienna/wiki/CONTINUOUS_INTEGRATION.md):
+
+## [__Documentation__](https://github.com/molinfo-vienna/wiki/DOCUMENTATION.md):
+
+## [__Packaging and Continuous Deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):
+
+
+# Target audience
 
 
 
@@ -22,4 +36,4 @@ Be sure to check out these related guides and materials:
 * [MolSSI Education resources](https://molssi-education.github.io/resources.html)
 * [Software Sustainability Institute Guides](https://software.ac.uk/resources/guides)
 
-__Next Chapter:__ [Scope ](https://github.com/molinfo-vienna/wiki/blob/additional_readme/SCOPE.md)
+__Next Chapter:__ [__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/additional_readme/PURPOSE.md)
