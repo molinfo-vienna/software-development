@@ -5,7 +5,7 @@ The official MolInfo-Vienna guidline for modern molecular informaticians to keep
 
 # Content of the guide
 
-[__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/main/PURPOSE.md):
+[__Purpose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/main/PURPOSE.md):
 
 Who should read this guide and why its important
 
