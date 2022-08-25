@@ -1,4 +1,7 @@
 This setup guide is for everyone wanting to setup their project quickly and easily for a molecular informatics project in python.
+In order to maximice collaborations and reasuability of each project, we recommend to make a package out of your project.
+This allows for easy access of your code, reduce the time to implement new features, and collaborate. 
+If you are working on sensitive topics that should not be public, you do not have to deploy to [Conda](https://anaconda.org/) or [PyPI](https://pypi.org/).
 
 1. Get a proper IDE
 
@@ -24,8 +27,6 @@ This setup guide is for everyone wanting to setup their project quickly and easi
 
     **Local installation**
     When working with your own code as a package and you want to reference it locally, it is often recommended to do a "local" python install via pip install -e .. This command will insert your new project into your Python site-packages folder so that it can be found in any directory on your computer.
-
-
     
 3. Structure your project
 
@@ -35,21 +36,56 @@ This setup guide is for everyone wanting to setup their project quickly and easi
 
     In general, a good practice is to separate the various elements of your software project into separate locations. A software project is not just the code needed to perform its tasks, but also to document and deploy.
 
+    **Give your own basic structure**
+
+    A possible outline of your project could look like the following:
+    ```
+    project/
+        devtools/
+            README.md
+            conda-recipe/
+                meta.yaml
+                build.sh
+                bld.bat
+                README.md
+        docs/
+        examplepackage/
+        tests/
+            data/
+            reference_data.csv
+            __init__.py
+            test_examplepackage.py
+        __init__.py
+        examplepackage.py
+        LICENSE.md
+        README.md
+        setup.py
+        .travis.yml
+        .appveyor.yml
+        .gitignore
+    ```
+
+    ***root directory***
+
+    The root directory should contain the primary `setup.py` file for the project. When 
     
 
-    We recommoned to use a [cookiecutter](https://github.com/cookiecutter/cookiecutter) template. There are numberous different [templates](https://github.com/search?q=cookiecutter&type=Repositories) available, however, we recommend using either the cookiecutter for [computational molecular Science (CMS)](https://github.com/MolSSI/cookiecutter-cms) or the cookiecutter for [data science](https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science).
+    **Cookiecutter**
+
+    We recommoned to use a [cookiecutter](https://github.com/cookiecutter/cookiecutter) template. There are numberous different [templates](https://github.com/search?q=cookiecutter&type=Repositories) available
+    The advantage of cookiecutter lies in their easy to use boilerplates that give a structured python project directory structure, ready to use files for version control, continuous integration (CI), licencing, and documentation.
+    
+    We recommend using either the cookiecutter for [computational molecular Science (CMS)](https://github.com/MolSSI/cookiecutter-cms) or the cookiecutter for [data science](https://drivendata.github.io/cookiecutter-data-science/#cookiecutter-data-science).
     Both have their advantages and disadvantages. If you are working with machine learning related projects, the data science cookiecutter might be better suited for you.
 
-    The advantage of cookiecutter lies in their easy to use boilerplates that give a structured python project directory structure.
-
     You can install the CMS cookiecutter the following way:
-        ```bash
+    ```bash
     # If you don't have cookiecutter installed, you can install it with pip or conda
     conda install -c conda-forge cookiecutter
     # Create a new project with the CMS cookiecutter
     # There are several input options - if in doubt, use the default options
     cookiecutter gh:molssi/cookiecutter-cms
-        ```
+    ```
 
 4. Version control system - github
 
@@ -72,6 +108,8 @@ This setup guide is for everyone wanting to setup their project quickly and easi
     Testing can be done with many different frameworks. Using the CMS cookiecutter, `pytest` is integrated
 
 7. Coding best practices
+
+8. Deployment
 
 
 
