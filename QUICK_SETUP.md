@@ -1,3 +1,5 @@
+# Quick Setup
+
 This setup guide is for everyone wanting to setup their project quickly and easily for a molecular informatics project in python.
 In order to maximice collaborations and reasuability of each project, we recommend to make a package out of your project.
 This allows for easy access of your code, reduce the time to implement new features, and collaborate. 
