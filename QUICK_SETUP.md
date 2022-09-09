@@ -160,9 +160,20 @@ If you are working on sensitive topics that should not be public, you do not hav
     When you are working on a new implementation or feature, create a 'feature' branch starting from the 'development' branch. Name that branch in a easy to read and recognizeable fashion that describes the new feature.
     Work on it till you think you are finished, write tests to evaluate your new feature, then use a pull request from the 'development' branch to your 'feature' branch and assign someone else to have a look at it.
     When the tests are finished successfully, do more testing on the 'development' branch. Then if you are certain it works, you can repeate the pull request from the 'main' branch into the development.
+
+    Commit on a regular basis to your remote branch. This saves your code even if your machine somehow gets busted. This can be done by:
+    ```
+    git add .
+    git commit -m "short message"
+    git push
+    ```    
+    Add a short message to your commit so that you know what it did. When looking at the history, commits should make sense.
+    Try to avoid committing broken code.
     There are several ways of how to approach a consisten collaboration, however, we recommend the above.
 
-5. Documentation #TODO
+    If there are conflicts, dont worry, they can be fixed. #TODO
+
+5. Documentation #TODO - THIS SECTION IS NOT FINISHED
 
     If you want people to use your project and code, write proper documentation!
     Start as soon as possible.
