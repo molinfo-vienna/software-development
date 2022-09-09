@@ -1,3 +1,5 @@
+### QUICK SETUP
+
 This setup guide is for everyone wanting to set up a molecular informatics project in python project quickly and easily.
 In order to maximize collaborations and reusability of each project, we recommend making a package out of your project.
 This allows for easy access to your code, reduces the time to implement new features, and collaborate with others. 
@@ -77,12 +79,12 @@ If you are working on sensitive topics that should not be public, you do not hav
 
     The root directory should contain the primary `setup.py` file for the `examplepackage`. This is the primary file that
     users and deployment tools will run to build the package. This is a
-    [critical component of any Python package][https://docs.python.org/3/distutils/setupscript.html] and should always be included.
+    [critical component of any Python package](https://docs.python.org/3/distutils/setupscript.html) and should always be included.
 
-    The three files, `LICENSE.md`, `README.md`, and `.gitignore` are Git and GitHub-specific files that should always be included. The `LICENSE.md` file is a direct copy of the [licensing] the package falls under. GitHub can detect the most common licenses from this file automatically and add the front page of the
+    The three files, `LICENSE.md`, `README.md`, and `.gitignore` are Git and GitHub-specific files that should always be included. The `LICENSE.md` file is a direct copy of the ***licensing*** the package falls under. GitHub can detect the most common licenses from this file automatically and add the front page of the
     project with this information (as shown in the red box in the image below).
 
-    ![The license file is automatically detected by GitHub][license_highlight]
+    ***The license file is automatically detected by GitHub]***
 
     The `README.md` file is the *most important file* for a GitHub project. A Markdown file with this name is rendered
     by GitHub on the project's homepage. That means this is the **FIRST** thing users see when visiting `exampleproject`,
@@ -90,18 +92,17 @@ If you are working on sensitive topics that should not be public, you do not hav
     1. Short explanation of what the project does
     1. Quick "How-To install and run" the project. This should be only a few lines, which is why its important to
     ensure the project can be installed easily.
-    * This topic is covered [in a later chapter][package_deploy_page], but it is important to plan for this section now
+    * This topic is covered in a later chapter, but it is important to plan for this section now
     1. Who are the authors of the package are
     1. Where to read the full documentation
 
     The `README.md` is not the place to dump all the documentation for the package for most packages, but it should
-    inform the users how to access all the needed info. More info on good `README.md` files can be found
-    [in a later chapter][documentation_page].
+    inform the users how to access all the needed info. More info on good `README.md` files can be found in a later chapter or via the [official python page](https://packaging.python.org/en/latest/guides/making-a-pypi-friendly-readme/).
 
     The final file in the root directory is the `.gitignore` file which tells `git` (not GitHub) file patterns to ignore
     when adding files to the repository, one per line. This helps prevent accidental file additions such as
     compiled Python binaries `.pyc` files with the simple pattern `*.pyc`. There is no "master" list for every project,
-    but [GitHub has some handy templates][gitignore_template] packages can borrow. This is not a required file but will
+    but GitHub has some handy templates packages can borrow. This is not a required file but will
     make software development much easier by reducing the number of accidental file commits.
 
 
@@ -120,7 +121,7 @@ If you are working on sensitive topics that should not be public, you do not hav
     **It is also critical to note that having an open source license does not preclude dual licensing, allowing authors to distribute the code under different licenses to different parties.**
     Issuing a second license generally requires the approval of all authors, so can be a complex issue (see Relicensing below).
 
-    For more details look at the [Licencing](https://github.com/molinfo-vienna/wiki/blob/additional_readme/LICENCING.md) file.
+    For more details look at the [Licencing](https://github.com/molinfo-vienna/wiki/blob/main/LICENCING.md) file.
 
     **Cookiecutter**
 
@@ -151,8 +152,8 @@ If you are working on sensitive topics that should not be public, you do not hav
     Continue then with point 5.
 
     If you are doing research or making projects for any part of the MolInfo group, please create the repo there, not in your private account.
-    Some best-practice for git usage can be found [here]().
-    Moreover, when using our self-hosted [runners]() please only create private repos.
+    Some best-practice for git usage can be found [here](https://deepsource.io/blog/git-best-practices/).
+    Moreover, when using our self-hosted [runners](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners) please only create private repos.
 
     In general, we recommend when collaborating with others, to generate a 'main' and 'development' branch.
     The 'main' branch should always include the lastest, running instance of your package. You can tag it with a particular version.
@@ -163,8 +164,11 @@ If you are working on sensitive topics that should not be public, you do not hav
 
     Commit on a regular basis to your remote branch. This saves your code even if your machine somehow gets busted. This can be done by:
     ```
+    # adds your current in that folder to the staging area
     git add .
+    # adds a commit message
     git commit -m "short message"
+    # finally pushes to your remote branch
     git push
     ```    
     Add a short message to your commit so that you know what it did. When looking at the history, commits should make sense.
@@ -196,12 +200,3 @@ If you are working on sensitive topics that should not be public, you do not hav
 8. Deployment #TODO - THIS SECTION IS NOT FINISHED
 
 9. GitHub Actions and ticketing #TODO - THIS SECTION IS NOT FINISHED
-
-
-
-    
-
-
-
-
-
