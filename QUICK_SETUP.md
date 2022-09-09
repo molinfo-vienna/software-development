@@ -154,19 +154,37 @@ If you are working on sensitive topics that should not be public, you do not hav
     Some best-practice for git usage can be found [here]().
     Moreover, when using our self-hosted [runners]() please only create private repos.
 
-    In general, one should 
+    In general, we recommend when collaborating with others, to generate a 'main' and 'development' branch.
+    The 'main' branch should always include the lastest, running instance of your package. You can tag it with a particular version.
+    The 'development' branch is the branch you and your collaborators should work on.
+    When you are working on a new implementation or feature, create a 'feature' branch starting from the 'development' branch. Name that branch in a easy to read and recognizeable fashion that describes the new feature.
+    Work on it till you think you are finished, write tests to evaluate your new feature, then use a pull request from the 'development' branch to your 'feature' branch and assign someone else to have a look at it.
+    When the tests are finished successfully, do more testing on the 'development' branch. Then if you are certain it works, you can repeate the pull request from the 'main' branch into the development.
+    There are several ways of how to approach a consisten collaboration, however, we recommend the above.
 
-5. Documentation
+5. Documentation #TODO
 
-6. Testing
+    If you want people to use your project and code, write proper documentation!
+    Start as soon as possible.
+    We would recommend filling up your README.md with what your project can do, how to install it, including requirement files, how to use it, what licence you have and where to ask questions.
+
+    Also define proper documentation for classes, methods, and scripts.
+    Without knowing what goes in, what it does, and what comes out how of any code, its hard for people to trust your code.
+    Moreover, after some time it is often hard for yourself to remember what you did over the years working on one or several projects.
+
+6. Testing #TODO - THIS SECTION IS NOT FINISHED
     
-    Testing can be done with many different frameworks. Using the CMS cookiecutter, `pytest` is integrated
+    Testing can be done with many different frameworks. Using the CMS cookiecutter, `pytest` is integrated.
+    Write test code for your 
 
-7. Coding best practices
+7. Coding best practices #TODO - THIS SECTION IS NOT FINISHED
+    
+    There is a ton of material of how to properly code with python or any other language.
+    It is often adviseable to look up some best practices when it comes to programming in general, in particular for a programming language, or a specific problem.
 
+8. Deployment #TODO - THIS SECTION IS NOT FINISHED
 
-
-8. Deployment
+9. GitHub Actions and ticketing #TODO - THIS SECTION IS NOT FINISHED
 
 
 
