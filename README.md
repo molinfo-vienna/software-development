@@ -58,4 +58,4 @@ Spot a typo? We're always looking to improve this document for the betterment of
 * Please feel free to [open a new issue](https://github.com/molinfo-vienna/software-development/issues/new) with your feedback and suggestions!
 * Or [make a pull request](https://github.com/molinfo-vienna/software-development/compare) from your branch or fork!
 
-__Next Chapter:__ [__IDE__](https://github.com/molinfo-vienna/wiki/blob/main/IDE.md)
+__Previous Chapter:__ [__Read me__](https://github.com/molinfo-vienna/wiki/blob/main/README.md) __Next Chapter:__ [__IDE__](https://github.com/molinfo-vienna/wiki/blob/main/IDE.md)
