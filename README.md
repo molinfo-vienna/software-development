@@ -2,24 +2,24 @@
 
 The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch than the how to set up their repository.
 
+This setup guide is for everyone wanting to set up a molecular informatics project in python project quickly and easily.
+In order to maximize collaborations and reusability of each project, we recommend making a package out of your project.
+This allows for easy access to your code, reduces the time to implement new features, and collaborate with others. 
+If you are working on sensitive topics that should not be public, you do not have to deploy to [Conda](https://anaconda.org/) or [PyPI](https://pypi.org/).
 
 # Content of the guide
 
-[__Purpose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/main/PURPOSE.md):
+[__IDE__](https://github.com/molinfo-vienna/wiki/blob/main/IDE.md):
 
-Who should read this guide and why its important
-
-[__Quick Setup__](https://github.com/molinfo-vienna/wiki/blob/main/QUICK_SETUP.md):
-
-For everyone interested in getting started right away
+For everyone interested in getting started right away with a proper IDE and package management
 
 [__Licencing__](https://github.com/molinfo-vienna/wiki/blob/main/LICENCING.md):
 
 Choose a proper licence
 
-[__Project Structure__](https://github.com/molinfo-vienna/wiki/blob/main/LICENCING.md):
+[__Project Structure__](https://github.com/molinfo-vienna/wiki/blob/main/PROJECT_STRUCTURE.md):
 
-The key to a successful project is structure
+The key to a successful project is its structure
 
 [__Version Control__](https://github.com/molinfo-vienna/wiki/blob/main/VERSION_CONTROL.md): 
 
@@ -39,11 +39,6 @@ Make it easier for you and collaborators to understand what your code tries to a
 
 [__Packaging and Continuous Deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):
 
-Make it easy for collaborators to use your code
-
-# Target audience
-
-
 
 ## Related Guides
 
@@ -53,4 +48,12 @@ Be sure to check out these related guides and materials:
 * [MolSSI Education resources](https://molssi-education.github.io/resources.html)
 * [Software Sustainability Institute Guides](https://software.ac.uk/resources/guides)
 
-__Next Chapter:__ [__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/main/PURPOSE.md)
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement?
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/molinfo-vienna/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/molinfo-vienna/software-development/compare) from your branch or fork!
+
+__Next Chapter:__ [__Puprose and Target Audience__](https://github.com/molinfo-vienna/wiki/blob/main/IDE.md)
