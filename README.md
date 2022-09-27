@@ -25,7 +25,7 @@ The key to a successful project is its structure
 
 The main idea behind version control
 
-[__Continuous Integration and Testing__](https://github.com/molinfo-vienna/wiki/blob/main/CI_TEST.md):
+[__Continuous Integration, Deployment, and Testing__](https://github.com/molinfo-vienna/wiki/blob/main/CI_CD_TEST.md):
 
 Build your code frequently while making making sure your code does what you want it to do without breaking
 
@@ -33,8 +33,7 @@ Build your code frequently while making making sure your code does what you want
 
 Make it easier for you and collaborators to understand what your code tries to achieve
 
-[__Packaging and Continuous Deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):
-
+[__Packaging__](https://github.com/molinfo-vienna/private_wiki/blob/main/PACKAGING.md):
 
 
 ## Some administative remarks and ML related things
@@ -58,4 +57,4 @@ Spot a typo? We're always looking to improve this document for the betterment of
 * Please feel free to [open a new issue](https://github.com/molinfo-vienna/software-development/issues/new) with your feedback and suggestions!
 * Or [make a pull request](https://github.com/molinfo-vienna/software-development/compare) from your branch or fork!
 
-__Previous Chapter:__ [__Read me__](https://github.com/molinfo-vienna/wiki/blob/main/README.md) __Next Chapter:__ [__IDE__](https://github.com/molinfo-vienna/wiki/blob/main/IDE.md)
+__Next Chapter:__ [__IDE__](https://github.com/molinfo-vienna/wiki/blob/main/IDE.md)

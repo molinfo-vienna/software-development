@@ -1,6 +1,11 @@
-# Continuous Integration and Testing
+# Continuous Integration (CI), Deployment (CD), and Testing
 
 ### CI
+
+
+
+### CD
+
 
 
 ### Unit Testing
