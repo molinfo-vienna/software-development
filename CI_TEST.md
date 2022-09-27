@@ -1,4 +1,9 @@
-# Unit Testing
+# Continuous Integration and Testing
+
+### CI
+
+
+### Unit Testing
 
 Writing test while writing code is a good practice and makes you code more reliable and prone to failure or bugs.
 Testing can be done with many different frameworks. Using the CMS cookiecutter, [pytest](https://docs.pytest.org/en/7.1.x/) is integrated. But you can of course also use python’s standard [unittest](https://docs.python.org/3/library/unittest.html) module.
@@ -18,4 +23,4 @@ When writing tests, keep the following in mind:
 Get started with pytest [here](https://docs.pytest.org/en/7.1.x/getting-started.html#getstarted).
 
 
-__Next Chapter:__ [__Continuous Integration__](https://github.com/molinfo-vienna/wiki/blob/main/CONTINUOUS_INTEGRATION.md)
+__Next Chapter:__ [__Documentation__](https://github.com/molinfo-vienna/wiki/blob/main/DOCUMENTATION.md)

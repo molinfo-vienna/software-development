@@ -1,4 +1,4 @@
-# Integrated development environment Software (IDE)
+# Integrated Development Environment Software (IDE)
 
 ### General
 

@@ -1,4 +1,4 @@
-# Continuous deployment
+# Continuous Deployment
 
 GitHub Actions
 

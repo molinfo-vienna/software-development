@@ -39,4 +39,4 @@ There are several ways of how to approach a consisten collaboration, however, we
 If there are conflicts, dont worry, they can be fixed. #TODO
 
 
-__Next Chapter:__ [__Testing__](https://github.com/molinfo-vienna/wiki/blob/main/UNIT_TESTING.md)
+__Next Chapter:__ [__Continuous Integration__](https://github.com/molinfo-vienna/wiki/blob/main/CI_TEST.md)

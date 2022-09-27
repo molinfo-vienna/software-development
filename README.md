@@ -25,13 +25,9 @@ The key to a successful project is its structure
 
 The main idea behind version control
 
-[__Testing__](https://github.com/molinfo-vienna/wiki/blob/main/UNIT_TESTING.md):
+[__Continuous Integration and Testing__](https://github.com/molinfo-vienna/wiki/blob/main/CI_test.md):
 
-Make sure your code does what you want it to do
-
-[__Continuous Integration__](https://github.com/molinfo-vienna/wiki/blob/main/CONTINUOUS_INTEGRATION.md):
-
-Make sure new code does not break your code
+Build your code frequently while making making sure your code does what you want it to do without breaking
 
 [__Documentation__](https://github.com/molinfo-vienna/wiki/blob/main/DOCUMENTATION.md):
 
