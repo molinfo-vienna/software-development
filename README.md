@@ -40,6 +40,11 @@ Make it easier for you and collaborators to understand what your code tries to a
 [__Packaging and Continuous Deployment__](https://github.com/molinfo-vienna/private_wiki/blob/main/CONTINUOUS_DEPLOYMENT.md):
 
 
+## Some administative remarks and ML related things
+[__Cluster Usage__](https://github.com/molinfo-vienna/private_wiki/blob/main/ADMINISTATION.md):
+
+[__Interesting machine learning resources__](https://github.com/molinfo-vienna/private_wiki/blob/main/ML.md):
+
 ## Related Guides
 
 Be sure to check out these related guides and materials:
