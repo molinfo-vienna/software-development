@@ -1,4 +1,4 @@
-### Version Control System
+# Version Control System
 
 Version control is a substantial part of any software project. It helps to keep track of different versions of your code, simplifies working together with collaborators, but also to store your code somewhere safe.
 

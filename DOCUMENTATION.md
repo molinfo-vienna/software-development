@@ -1,4 +1,4 @@
-### Documentation
+# Documentation
 
 If you want people to use your project and code, write proper documentation!
 Start as soon as possible! 

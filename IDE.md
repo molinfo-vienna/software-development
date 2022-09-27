@@ -1,5 +1,6 @@
-### Get a proper IDE
+# Integrated development environment Software (IDE)
 
+### General
 
 We recommend downloading and installing `VS Code` for your project.
 There are numerous other IDEs (e.g. PyCharm, Spyder,...) but VS Code is lightweight and can be extended easily to the favor of your choice.
