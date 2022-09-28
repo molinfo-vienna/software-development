@@ -1,6 +1,11 @@
 # Continuous Integration (CI), Deployment (CD), and Testing
 
 ### CI
+In general, the practice of continuous integration simply means that building and testing each change of the code is done frequently and automatically.
+The frequency of the contribution can be individually but it is common practice to do that on a daily basis keeping the contribution rather small. 
+As soon as new code is commited, an automated build and test suite is prompted to detect errors as quickly as possible.
+This reduces the chances of introducing conflict that you need to resolve later.
+The changes can be 
 
 
 
