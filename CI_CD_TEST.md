@@ -9,7 +9,7 @@ As soon as new code is commited, an automated build and test suite is prompted t
 This reduces the chances of introducing conflict that you need to resolve later and assures that your changes did not break your code or introduced bugs.
 
 Building your code means taking the raw source code and everthing necessary for its execution, and translating it into a format that computers can run directly.
-As python is an [interpreted language](https://en.wikipedia.org/wiki/Interpreter_(computing)) its [`build`] revolves around test execution rather than compilation.
+As python is an [interpreted language](https://en.wikipedia.org/wiki/Interpreter_(computing)) its `build` revolves around test execution rather than compilation.
 
 For scientists and developers, doing these steps manually takes a long time - so a big part of CI is about automating that process.
 This is were testing come in handy.
@@ -32,7 +32,7 @@ When writing tests, keep the following in mind:
 * When collaborating, looking and running unit tests can be quite helpful in the beginning to get an understanding of the code itself
 
 Get started with pytest [here](https://docs.pytest.org/en/7.1.x/getting-started.html#getstarted).
-Using GitHub Actions as the [CI/CD](/CI_CD_TEST.md#cicd-services) service, you can write your test the same way and then integrate it in your [`yaml`] file as shown [here](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#testing-your-code)
+Using GitHub Actions as the [CI/CD](/CI_CD_TEST.md#cicd-services) service, you can write your test the same way and then integrate it in your `yaml` file as shown [here](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#testing-your-code)
 
 ### Continuous delivery
 Continuous delivery is an extension of continuous integration since it automatically deploys all code changes to a testing and/or production environment after the build stage. 
@@ -58,7 +58,7 @@ Github Actions offers integrated [CI](https://docs.github.com/en/actions/deploym
 In order to get to know GitHub Actions we recommend the official [Understaind GitHub Actions homepage](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) as well as the [building and testing python code](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) GitHub Actions site.
 Another good resource is the [Python Packages homepage](https://py-pkgs.org/08-ci-cd.html) for more details, key concepts, and examples.
 
-One important note is that when using self hosted runners [`ALWAYS`] use private repos! Please read the security concerns [here](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners#self-hosted-runner-security).
+One important note is that when using self hosted runners `ALWAYS` use private repos! Please read the security concerns [here](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners#self-hosted-runner-security).
 
 We provide self hosted runners for GitHub Actions CI/CD - the how to use them can be found [here](https://github.com/molinfo-vienna/software-development/blob/main/ADMINISTRATION.md#server-usage-and-self-hosted-runners)
 

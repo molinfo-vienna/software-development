@@ -46,17 +46,17 @@ setup.py
 .gitignore
 ```
 
-The root directory should contain the primary [`setup.py`] file for the [`examplepackage`]. This is the primary file that
+The root directory should contain the primary `setup.py` file for the `examplepackage`. This is the primary file that
 users and deployment tools will run to build the package. This is a
 [critical component of any Python package](https://docs.python.org/3/distutils/setupscript.html) and should always be included.
 
-The three files, [`LICENSE.md`], [`README.md`], and [`.gitignore`] are Git and GitHub-specific files that should always be included. The [`LICENSE.md`] file is a direct copy of the ***licensing*** the package falls under. GitHub can detect the most common licenses from this file automatically and add the front page of the
+The three files, `LICENSE.md`, `README.md`, and `.gitignore` are Git and GitHub-specific files that should always be included. The `LICENSE.md` file is a direct copy of the ***licensing*** the package falls under. GitHub can detect the most common licenses from this file automatically and add the front page of the
 project with this information (as shown in the red box in the image below).
 
 ***The license file is automatically detected by GitHub]***
 
-The [`README.md`] file is the *most important file* for a GitHub project. A Markdown file with this name is rendered
-by GitHub on the project's homepage. That means this is the **FIRST** thing users see when visiting [`exampleproject`],
+The `README.md` file is the *most important file* for a GitHub project. A Markdown file with this name is rendered
+by GitHub on the project's homepage. That means this is the **FIRST** thing users see when visiting `exampleproject`,
 so this should be an informative file that tells users the following:
 1. Short explanation of what the project does
 1. Quick "How-To install and run" the project. This should be only a few lines, which is why its important to
@@ -65,12 +65,12 @@ ensure the project can be installed easily.
 1. Who are the authors of the package are
 1. Where to read the full documentation
 
-The [`README.md`] is not the place to dump all the documentation for the package for most packages, but it should
-inform the users how to access all the needed info. More info on good [`README.md`] files can be found in a later chapter or via the [official python page](https://packaging.python.org/en/latest/guides/making-a-pypi-friendly-readme/).
+The `README.md` is not the place to dump all the documentation for the package for most packages, but it should
+inform the users how to access all the needed info. More info on good `README.md` files can be found in a later chapter or via the [official python page](https://packaging.python.org/en/latest/guides/making-a-pypi-friendly-readme/).
 
-The final file in the root directory is the [`.gitignore`] file which tells [`git`] (not GitHub) file patterns to ignore
+The final file in the root directory is the `.gitignore` file which tells `git` (not GitHub) file patterns to ignore
 when adding files to the repository, one per line. This helps prevent accidental file additions such as
-compiled Python binaries [`.pyc`] files with the simple pattern [`*.pyc`]. There is no "master" list for every project,
+compiled Python binaries `.pyc` files with the simple pattern `*.pyc`. There is no "master" list for every project,
 but GitHub has some handy templates packages can borrow. This is not a required file but will
 make software development much easier by reducing the number of accidental file commits.
 
