@@ -1,6 +1,6 @@
 # Administrative
 
-### Server Usage
+### Server Usage and self-hosted runners
 
 The [Molecular-Informatics Group]() provides a server. The best practices can be found [here](https://wiki.univie.ac.at/pages/viewpage.action?spaceKey=ChemInfo&title=Cheminformatics+Research+Group+Wiki+Home).
 You have to first define your university and then log in with your credentials.
