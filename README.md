@@ -9,7 +9,7 @@ If you are working on sensitive topics that should not be public, you do not hav
 
 # Content of the guide
 
-[__IDE__](/IDE.md):
+[__Integrated Development Environment Software__](/IDE.md):
 
 For everyone interested in getting started right away with a proper IDE and package management
 
@@ -57,4 +57,4 @@ Spot a typo? We're always looking to improve this document for the betterment of
 * Please feel free to [open a new issue](https://github.com/molinfo-vienna/software-development/issues/new) with your feedback and suggestions!
 * Or [make a pull request](https://github.com/molinfo-vienna/software-development/compare) from your branch or fork!
 
-__Next Chapter:__ [__IDE__](/IDE.md)
+__Next Chapter:__ [__Integrated Development Environment Software__](/IDE.md)
