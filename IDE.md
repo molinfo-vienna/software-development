@@ -2,7 +2,7 @@
 
 ### General
 
-We recommend downloading and installing `VS Code` for your project.
+We recommend downloading and installing [`VS Code`] for your project.
 There are numerous other IDEs (e.g. PyCharm, Spyder,...) but VS Code is lightweight and can be extended easily to the favor of your choice.
 
 To download and install our recommendation go to [VS Code Homepage](https://code.visualstudio.com/download). Follow the instructions for your operating system.
