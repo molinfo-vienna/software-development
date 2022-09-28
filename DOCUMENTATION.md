@@ -11,10 +11,8 @@ Moreover, after some time it is often hard for yourself to remember what you did
 
 
 In general we recommend the following sites for further details:
-
-[Real Python](https://realpython.com/documenting-python-code/) offers an in depth guide for documenting python code.
-
-[The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/documentation/) is not as overloaded and gives a brief insight into another tool ([Sphinx](https://www.sphinx-doc.org/en/master/)).
+* [Real Python](https://realpython.com/documenting-python-code/) offers an in depth guide for documenting python code.
+* [The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/documentation/) is not as overloaded and gives a brief insight into another tool ([Sphinx](https://www.sphinx-doc.org/en/master/)).
 
 
 __Next Chapter:__ [__Packaging and Continuous Deployment__](/PACKAGING.md)
