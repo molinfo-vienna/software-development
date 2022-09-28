@@ -44,10 +44,10 @@ Make it easier for you and collaborators to understand what your code tries to a
 ## Related Guides
 
 Be sure to check out these related guides and materials:
-* [Chodera-Lab Software Development](https://github.com/choderalab/software-development/blob/master/README.md)
 * [MolSSI Software Best Practices](https://molssi.org/education/best-practices/)
 * [MolSSI Education resources](https://molssi-education.github.io/resources.html)
 * [Software Sustainability Institute Guides](https://software.ac.uk/resources/guides)
+* [Chodera-Lab Software Development](https://github.com/choderalab/software-development/blob/master/README.md)
 
 ## Help Make this Page Better
 
