@@ -16,6 +16,14 @@ In general we recommend the following sites for further details:
 Many `README.md` files include a series of badges at the top.
 These badges are not only visual indicators of certain information---whether the repo is in a healthy state with passing tests, which channels are available for obtain the tool, which version number is current, and how many times the software has been downloaded---they provide quick links to a variety of useful integrated services.
 
+Some useful badges:
+- [AppVeyor badge](https://www.appveyor.com/docs/status-badges/)
+- [pypi version and downloads badges](http://codeinthehole.com/writing/pypi-readme-badges/)
+- [Anaconda Cloud version and download badge](https://anaconda.org/anaconda/anaconda/badges)
+- [Depsy badge](http://blog.impactstory.org/introducing-depsy/)
+- [Zenodo DOI badge](https://guides.github.com/activities/citable-code/)
+
+
 There are many tools that can be used to write documentation. The easiest to start with is the GitHub wiki, which uses markdown syntax just like the rest of GitHub.
 
 ### GitHub wiki
@@ -48,12 +56,5 @@ Some good examples of Sphinx documentation:
 
 * [readme.io](http://readme.io): A collaborative system for writing documentation
 * [GitBook](https://www.gitbook.com): An online collaborative publishing toolchain
-
-Some useful badges:
-- [AppVeyor badge](https://www.appveyor.com/docs/status-badges/)
-- [pypi version and downloads badges](http://codeinthehole.com/writing/pypi-readme-badges/)
-- [Anaconda Cloud version and download badge](https://anaconda.org/anaconda/anaconda/badges)
-- [Depsy badge](http://blog.impactstory.org/introducing-depsy/)
-- [Zenodo DOI badge](https://guides.github.com/activities/citable-code/)
 
 __Next Chapter:__ [__Packaging and Continuous Deployment__](/PACKAGING.md)
