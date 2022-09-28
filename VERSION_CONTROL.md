@@ -51,4 +51,4 @@ There are several ways of how to approach a consisten collaboration, however, we
 If there are merge conflicts, dont worry, they can be fixed - you can start with reading on this page under [Basic Merge Conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 
 
-__Next Chapter:__ [__Continuous Integration, Deployment, and Testing__](https://github.com/molinfo-vienna/wiki/blob/main/CI_CD_TEST.md)
+__Next Chapter:__ [__Continuous Integration, Deployment, and Testing__](/CI_CD_TEST.md)
