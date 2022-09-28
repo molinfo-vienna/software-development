@@ -37,7 +37,7 @@ Make it easier for you and collaborators to understand what your code tries to a
 
 
 ## Some administative remarks and ML related things
-[__Cluster Usage__](/ADMINISTRATION.md)
+[__Cluster and private runner usage__](/ADMINISTRATION.md)
 
 [__Interesting machine learning resources__](/ML.md)
 
