@@ -55,7 +55,9 @@ There are many CI/CD services out there — such as [GitHub Actions](https://doc
 We recommend using GitHub Actions, which is a service for executing CI/CD workflows for software stored in a GitHub repository.
 Github Actions offers integrated [CI](https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment) and [CD](https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment) workflows.
 
-In order to get to know GitHub Actions we recommend the official [Understaind GitHub Actions homepage](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) but also the [Python Packages homepage](https://py-pkgs.org/08-ci-cd.html) for more details, key concepts, and examples.
+In order to get to know GitHub Actions we recommend the official [Understaind GitHub Actions homepage](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) as well as the [building and testing python code](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) GitHub Actions site.
+Another good resource is the [Python Packages homepage](https://py-pkgs.org/08-ci-cd.html) for more details, key concepts, and examples.
+
 
 One important note is that when using self hosted runners `ALWAYS` use private repos! Please read the security concerns [here](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners#self-hosted-runner-security).
 
