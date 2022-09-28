@@ -25,7 +25,7 @@ The key to a successful project is its structure
 
 The main idea behind version control
 
-[__Continuous Integration, Deployment, and Testing__](/CI_CD_TEST.md):
+[__Continuous Integration, Continuous Delivery, Continuous Deployment, and Testing__](/CI_CD_TEST.md):
 
 Build your code frequently while making making sure your code does what you want it to do without breaking
 
@@ -33,7 +33,7 @@ Build your code frequently while making making sure your code does what you want
 
 Make it easier for you and collaborators to understand what your code tries to achieve
 
-[__Packaging__](/PACKAGING.md):
+[__Packaging__](/PACKAGING.md)
 
 
 ## Some administative remarks and ML related things
