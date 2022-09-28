@@ -89,7 +89,7 @@ It is also important to remember that different licenses may not be compatible w
 **It is also critical to note that having an open source license does not preclude dual licensing, allowing authors to distribute the code under different licenses to different parties.**
 Issuing a second license generally requires the approval of all authors, so can be a complex issue (see Relicensing below).
 
-For more details look at the [Licencing](https://github.com/molinfo-vienna/wiki/blob/main/LICENCING.md) file.
+For more details look at the [Licencing](/LICENCING.md) file.
 
 **Cookiecutter**
 
@@ -108,4 +108,4 @@ conda install -c conda-forge cookiecutter
 cookiecutter gh:molssi/cookiecutter-cms
 ```
 
-__Next Chapter:__ [__Version Control__](https://github.com/molinfo-vienna/wiki/blob/main/VERSION_CONTROL.md)
+__Next Chapter:__ [__Version Control__](/VERSION_CONTROL.md)

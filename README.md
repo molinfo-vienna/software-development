@@ -9,37 +9,37 @@ If you are working on sensitive topics that should not be public, you do not hav
 
 # Content of the guide
 
-[__IDE__](https://github.com/molinfo-vienna/wiki/blob/main/IDE.md):
+[__IDE__](/IDE.md):
 
 For everyone interested in getting started right away with a proper IDE and package management
 
-[__Licencing__](https://github.com/molinfo-vienna/wiki/blob/main/LICENCING.md):
+[__Licencing__](/LICENCING.md):
 
 Choose a proper licence
 
-[__Project Structure__](https://github.com/molinfo-vienna/wiki/blob/main/PROJECT_STRUCTURE.md):
+[__Project Structure__](/PROJECT_STRUCTURE.md):
 
 The key to a successful project is its structure
 
-[__Version Control__](https://github.com/molinfo-vienna/wiki/blob/main/VERSION_CONTROL.md): 
+[__Version Control__](/VERSION_CONTROL.md): 
 
 The main idea behind version control
 
-[__Continuous Integration, Deployment, and Testing__](https://github.com/molinfo-vienna/wiki/blob/main/CI_CD_TEST.md):
+[__Continuous Integration, Deployment, and Testing__](/CI_CD_TEST.md):
 
 Build your code frequently while making making sure your code does what you want it to do without breaking
 
-[__Documentation__](https://github.com/molinfo-vienna/wiki/blob/main/DOCUMENTATION.md):
+[__Documentation__](/DOCUMENTATION.md):
 
 Make it easier for you and collaborators to understand what your code tries to achieve
 
-[__Packaging__](https://github.com/molinfo-vienna/private_wiki/blob/main/PACKAGING.md):
+[__Packaging__](/PACKAGING.md):
 
 
 ## Some administative remarks and ML related things
-[__Cluster Usage__](https://github.com/molinfo-vienna/software-development/blob/main/ADMINISTRATION.md)
+[__Cluster Usage__](/ADMINISTRATION.md)
 
-[__Interesting machine learning resources__](https://github.com/molinfo-vienna/software-development/blob/main/ML.md)
+[__Interesting machine learning resources__](/ML.md)
 
 ## Related Guides
 
@@ -57,4 +57,4 @@ Spot a typo? We're always looking to improve this document for the betterment of
 * Please feel free to [open a new issue](https://github.com/molinfo-vienna/software-development/issues/new) with your feedback and suggestions!
 * Or [make a pull request](https://github.com/molinfo-vienna/software-development/compare) from your branch or fork!
 
-__Next Chapter:__ [__IDE__](https://github.com/molinfo-vienna/wiki/blob/main/IDE.md)
+__Next Chapter:__ [__IDE__](/IDE.md)

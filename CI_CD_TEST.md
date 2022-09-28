@@ -33,4 +33,4 @@ When writing tests, keep the following in mind:
 Get started with pytest [here](https://docs.pytest.org/en/7.1.x/getting-started.html#getstarted).
 
 
-__Next Chapter:__ [__Documentation__](https://github.com/molinfo-vienna/wiki/blob/main/DOCUMENTATION.md)
+__Next Chapter:__ [__Documentation__](/DOCUMENTATION.md)

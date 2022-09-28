@@ -9,4 +9,4 @@ Also define proper documentation for classes, methods, and scripts.
 Without knowing what goes in, what it does, and what comes out how of any code, its hard for people to trust your code.
 Moreover, after some time it is often hard for yourself to remember what you did over the years working on one or several projects.
 
-__Next Chapter:__ [__Packaging and Continuous Deployment__](https://github.com/molinfo-vienna/wiki/blob/main/PACKAGING.md)
+__Next Chapter:__ [__Packaging and Continuous Deployment__](/PACKAGING.md)
