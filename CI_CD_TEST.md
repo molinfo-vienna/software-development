@@ -12,8 +12,7 @@ Building your code means taking the raw source code and everthing necessary for 
 As python is an [interpreted language](https://en.wikipedia.org/wiki/Interpreter_(computing)) its `build` revolves around test execution rather than compilation.
 
 For scientists and developers, doing these steps manually takes a long time - so a big part of CI is about automating that process.
-This is were testing comes handy - 
-
+This is were testing come in handy.
 
 ### Unit Testing
 
@@ -33,6 +32,7 @@ When writing tests, keep the following in mind:
 * When collaborating, looking and running unit tests can be quite helpful in the beginning to get an understanding of the code itself
 
 Get started with pytest [here](https://docs.pytest.org/en/7.1.x/getting-started.html#getstarted).
+Using GitHub Actions as the [CI/CD](/CI_CD_TEST.md#cicd-services) service, you can write your test the same way and then integrate it in your `yaml` file as shown [here](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#testing-your-code)
 
 ### Continuous delivery
 Continuous delivery is an extension of continuous integration since it automatically deploys all code changes to a testing and/or production environment after the build stage. 
@@ -47,7 +47,7 @@ Continuous deployment goes one step further than continuous delivery. With this 
 
 Continuous deployment is an excellent way to accelerate the feedback loop with your customers and take pressure off the team as there isn't a "release day" anymore. Developers can focus on building software, and they see their work go live minutes after they've finished working on it.
 
-For further reading please look at the sites provided in the next section [CI/CD](/CI_CD_TEST.md#CI/CD-services)
+For further reading please look at the sites provided in the next section [CI/CD](/CI_CD_TEST.md#cicd-services)
 
 
 ### CI/CD services
