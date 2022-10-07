@@ -1,4 +1,4 @@
-# The public best-practice page for the Molecular Informatics platform at the University of Vienna
+# The public good-practice page for the Molecular Informatics platform at the University of Vienna
 
 The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch rather than the project set up.
 The platform consists of three teams, [Christian-Doppler Laboratory for Molecular Infomatics in the Bioscience team]() the [Cheminfo team](https://cheminfo.univie.ac.at/home/), and the [comp3d team](https://comp3d.univie.ac.at/). It is 
