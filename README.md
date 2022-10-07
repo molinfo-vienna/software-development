@@ -16,14 +16,14 @@ First of all: `Welcome to the Molecular Informatics platform!`
 We are glad to have you on-board :)
 
 There are a few practices we consider worth following.
-1. Communications:
+1. <b>Communications:</b>
 
     The main communication channel within the platform is mattermost. There are different channels for each team individually.
     The Cheminfo team has also a team calendar and a mailing list. If you are not part of them yet, depending on the team, please write your admin.
-2. Software practices:
+2. <b>Software practices:</b>
 
     We would like you to read through the software debelopment guide starting [here](/IDE.md) and follow the [coding best practices](/BEST_PRACTICE.md). This is by no means a complete guide, but highlights a few practices we would like you to follow.
-3. General or specific issues, commenting, or bug reporting:
+3. <b>General or specific issues, commenting, or bug reporting:</b>
 
     You can simply do that by going to the repository of your choice and then add an issue.
     The CD-Lab MiB has a dedicated [issue repository](https://github.com/molinfo-vienna/cd_mib_open_issues). There you can add general requests for the CD-Lab that is independent of the repository and only visible for the CD-Lab team members.
