@@ -37,6 +37,10 @@ The [Molecular-Informatics Platform]() provides a server and self hosted runners
 You have to first define your university and then log in with your credentials.
 If you do not have access, please write either Thomas Seidel (thomas.seidel@univie.ac.at), or Oliver Wieder (oliver.wieder@univie.ac.at) and we will add you to the user list.
 
+### Want to report a bug, comment on the code, or open a general issue
+
+The CD-Lab MiB has a dedicated [issue repository](https://github.com/molinfo-vienna/cd_mib_open_issues/edit/main/README.md). There you can add general requests for the CD-Lab.
+
 # Content of the software development guide:
 
 [__Integrated Development Environment Software__](/IDE.md):
@@ -81,10 +85,11 @@ Be sure to check out these related guides and materials:
 
 ## Help Make this Page Better
 
-Want to contribute to this repository? Have a suggestion for an improvement?
+Want to contribute to this repository? Want to report a bug? Have a suggestion for an improvement?
 Spot a typo? We're always looking to improve this document for the betterment of all.
 
 * Please feel free to [open a new issue](https://github.com/molinfo-vienna/software-development/issues/new) with your feedback and suggestions!
-* Or [make a pull request](https://github.com/molinfo-vienna/software-development/compare) from your branch or fork!
+* [Make a pull request](https://github.com/molinfo-vienna/software-development/compare) from your branch or fork!
+* or simply comment on a commit.
 
 __Next Chapter:__ [__Integrated Development Environment Software__](/IDE.md)
