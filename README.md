@@ -1,6 +1,7 @@
-# The public best-practice page for the Molecular Informatics group at the University of Vienna
+# The public best-practice page for the Molecular Informatics platform at the University of Vienna
 
 The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch than the how to set up their repository.
+The platform consists of three teams, [Christian-Doppler Laboratory for Molecular Infomatics in the Bioscience team]() the [Cheminfo team](), and the [comp3d team](). It is 
 
 This setup guide is for everyone wanting to set up a molecular informatics project in python project quickly and easily.
 In order to maximize collaborations and reusability of each project, we recommend making a package out of your project.
@@ -10,15 +11,15 @@ If you are working on sensitive topics that should not be public, you do not hav
 # Administrative
 
 ### New to the team?
-First of all: `Welcome to the Molecular Informatics group!`
+First of all: `Welcome to the Molecular Informatics platform!`
 
 We are glad to have you on-board :)
 
 There are a few practices we consider worth following.
 1. Communications:
 
-    The main communication channel within the Group is mattermost. There are different channels for each group individually.
-    The Cheminfo group has also a group calendar and a mailing list. If you are not part of them yet, depending on the group, please write your admin.
+    The main communication channel within the platform is mattermost. There are different channels for each team individually.
+    The Cheminfo team has also a team calendar and a mailing list. If you are not part of them yet, depending on the team, please write your admin.
 2. Software practices:
 
     We would like you to read through the software debelopment guide starting [here](/IDE.md) and follow the [coding best practices](/BEST_PRACTICE.md). This is by no means a complete guide, but highlights a few practices we would like you to follow.
@@ -32,7 +33,7 @@ Add then the team members to your repo and do awesome work!
 
 ### Server Usage and self-hosted runners
 
-The [Molecular-Informatics Group]() provides a server and self hosted runners. The best practices can be found [here](https://wiki.univie.ac.at/pages/viewpage.action?spaceKey=ChemInfo&title=Cheminformatics+Research+Group+Wiki+Home).
+The [Molecular-Informatics Platform]() provides a server and self hosted runners. The best practices can be found [here](https://wiki.univie.ac.at/pages/viewpage.action?spaceKey=ChemInfo&title=Cheminformatics+Research+Group+Wiki+Home).
 You have to first define your university and then log in with your credentials.
 If you do not have access, please write either Thomas Seidel (thomas.seidel@univie.ac.at), or Oliver Wieder (oliver.wieder@univie.ac.at) and we will add you to the user list.
 
