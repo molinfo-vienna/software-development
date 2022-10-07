@@ -15,10 +15,12 @@ First of all: `Welcome to the Molecular Informatics group!`
 We are glad to have you on-board :)
 
 There are a few practices we consider worth following.
-1. Communications
+1. Communications:
+
     The main communication channel within the Group is mattermost. There are different channels for each group individually.
     The Cheminfo group has also a group calendar and a mailing list. If you are not part of them yet, depending on the group, please write your admin.
-2. Software practices
+2. Software practices:
+
     We would like you to read through the software debelopment guide starting [here](/IDE.md) and follow the [coding best practices](/BEST_PRACTICE.md). This is by no means a complete guide, but highlights a few practices we would like you to follow.
 
 After reading through the guidelines, create a repo (either private or public - depending on if you are using our self hosted runners or not and if you code contains sensitive information. If its only sensitive data and you are not using self hosted runners, please keep the repo public).
