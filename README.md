@@ -30,7 +30,7 @@ There are a few practices we consider worth following.
 
 After reading through the guidelines, create a repo (either private or public - depending on if you are using our self hosted runners or not and if you code contains sensitive information. If its only sensitive data and you are not using self hosted runners, please keep the repo public).
 
-Go to the [Mol-Info GitHub page](https://github.com/molinfo-vienna/) and create an empty repo, then use the cookiecutter template to create a local repo with the same name and connect/push it to the remote one.
+Go to the [Mol-Info GitHub page](https://github.com/organizations/molinfo-vienna/repositories/new) and create an empty repo, then use the cookiecutter template to create a local repo with the same name and connect/push it to the remote one.
 Please only use the Mol-Info GitHub page for code/repos that you create during the time here.
 Add then the team members to your repo and do awesome work!
 
