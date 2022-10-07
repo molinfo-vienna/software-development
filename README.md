@@ -1,7 +1,7 @@
 # The public best-practice page for the Molecular Informatics platform at the University of Vienna
 
 The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch than the how to set up their repository.
-The platform consists of three teams, [Christian-Doppler Laboratory for Molecular Infomatics in the Bioscience team]() the [Cheminfo team](), and the [comp3d team](). It is 
+The platform consists of three teams, [Christian-Doppler Laboratory for Molecular Infomatics in the Bioscience team]() the [Cheminfo team](https://cheminfo.univie.ac.at/home/), and the [comp3d team](https://comp3d.univie.ac.at/). It is 
 
 This setup guide is for everyone wanting to set up a molecular informatics project in python project quickly and easily.
 In order to maximize collaborations and reusability of each project, we recommend making a package out of your project.
