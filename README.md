@@ -26,7 +26,7 @@ There are a few practices we consider worth following.
 3. General or specific issues, commenting, or bug reporting:
 
     You can simply do that by going to the repository of your choice and then add an issue.
-    The CD-Lab MiB has a dedicated [issue repository](https://github.com/molinfo-vienna/cd_mib_open_issues/edit/main/README.md). There you can add general requests for the CD-Lab that is independent of the repository and only visible for the CD-Lab team members.
+    The CD-Lab MiB has a dedicated [issue repository](https://github.com/molinfo-vienna/cd_mib_open_issues). There you can add general requests for the CD-Lab that is independent of the repository and only visible for the CD-Lab team members.
 
 After reading through the guidelines, create a repo (either private or public - depending on if you are using our self hosted runners or not and if you code contains sensitive information. If its only sensitive data and you are not using self hosted runners, please keep the repo public).
 
