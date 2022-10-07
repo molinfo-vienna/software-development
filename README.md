@@ -23,6 +23,10 @@ There are a few practices we consider worth following.
 2. Software practices:
 
     We would like you to read through the software debelopment guide starting [here](/IDE.md) and follow the [coding best practices](/BEST_PRACTICE.md). This is by no means a complete guide, but highlights a few practices we would like you to follow.
+3. General or specific issues, commenting, or bug reporting:
+
+    You can simply do that by going to the repository of your choice and then add an issue.
+    The CD-Lab MiB has a dedicated [issue repository](https://github.com/molinfo-vienna/cd_mib_open_issues/edit/main/README.md). There you can add general requests for the CD-Lab that is independent of the repository and only visible for the CD-Lab team members.
 
 After reading through the guidelines, create a repo (either private or public - depending on if you are using our self hosted runners or not and if you code contains sensitive information. If its only sensitive data and you are not using self hosted runners, please keep the repo public).
 
@@ -37,9 +41,6 @@ The [Molecular-Informatics Platform]() provides a server and self hosted runners
 You have to first define your university and then log in with your credentials.
 If you do not have access, please write either Thomas Seidel (thomas.seidel@univie.ac.at), or Oliver Wieder (oliver.wieder@univie.ac.at) and we will add you to the user list.
 
-### Want to report a bug, comment on the code, or open a general issue
-
-The CD-Lab MiB has a dedicated [issue repository](https://github.com/molinfo-vienna/cd_mib_open_issues/edit/main/README.md). There you can add general requests for the CD-Lab.
 
 # Content of the software development guide:
 
