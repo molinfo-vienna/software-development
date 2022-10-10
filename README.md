@@ -43,7 +43,7 @@ If you do not have access, please write either Thomas Seidel (thomas.seidel@univ
 
 ### CDPKit
 
-The Chemical Data Processing Toolkit is a toolkit developed by Thomas Seidel and the documentation can be found [here](http://a7srv2.pch.univie.ac.at/cdpkit/). Currently it is only accessable within the University of Vienna or via the [Univie VPN](https://zid.univie.ac.at/vpn/).
+The [Chemical Data Processing Toolkit](https://github.com/molinfo-vienna/CDPKit) is a toolkit developed by Thomas Seidel and the documentation can be found [here](http://a7srv2.pch.univie.ac.at/cdpkit/). Currently it is only accessable within the University of Vienna or via the [Univie VPN](https://zid.univie.ac.at/vpn/).
 
 
 # Content of the software development guide:
