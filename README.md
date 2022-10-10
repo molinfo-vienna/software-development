@@ -37,7 +37,7 @@ Add then the team members to your repo and do awesome work!
 
 ## CDPKit, Server Usage, and self-hosted runners
 
-The [Molecular-Informatics Platform]() provides a server and self hosted runners. The best practices can be found [here](https://wiki.univie.ac.at/pages/viewpage.action?spaceKey=ChemInfo&title=Cheminformatics+Research+Group+Wiki+Home).
+The [Molecular-Informatics Platform]() provides a server and self hosted runners. The best practices can be found [here](https://wiki.univie.ac.at/display/ChemInfo/Best+Pracitice+Computer+Resources+Guide).
 You have to first define your university and then log in with your credentials.
 If you do not have access, please write either Thomas Seidel (thomas.seidel@univie.ac.at), or Oliver Wieder (oliver.wieder@univie.ac.at) and we will add you to the user list.
 
