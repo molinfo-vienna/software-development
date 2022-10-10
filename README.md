@@ -52,7 +52,7 @@ The [Chemical Data Processing Toolkit](https://github.com/molinfo-vienna/CDPKit)
 
 For everyone interested in getting started right away with a proper IDE and package management
 
-[//]: # ([__Licencing__](/LICENCING.md))
+[//]: # [__Licencing__](/LICENCING.md)
 
 [//]: # (Choose a proper licence)
 
