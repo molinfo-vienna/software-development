@@ -72,7 +72,8 @@ Build your code frequently while making making sure your code does what you want
 
 Make it easier for you and collaborators to understand what your code tries to achieve
 
-[__Packaging__](/PACKAGING.md)
+[__Packaging__](/PACKAGING.md):
+Make your code visible and easy to use
 
 
 ## Some ML related links 
