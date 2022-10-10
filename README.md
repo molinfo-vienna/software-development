@@ -20,7 +20,7 @@ There are a few practices we consider worth following.
 
     The main communication channel within the platform is mattermost. There are different channels for each team individually.
     The Cheminfo team has also a team calendar and a mailing list. If you are not part of them yet, depending on the team, please write your admin.
-2. <b>Software practices:</b>
+2. <b>Software project good-practices:</b>
 
     We would like you to read through the software development guide starting [here](/IDE.md) and follow the [coding best practices](/BEST_PRACTICE.md). This is by no means a complete guide, but highlights a few practices we would like you to follow.
 3. <b>General or specific issues, commenting, or bug reporting:</b>
