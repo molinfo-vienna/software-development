@@ -75,8 +75,7 @@ Make it easier for you and collaborators to understand what your code tries to a
 [__Packaging__](/PACKAGING.md)
 
 
-## Some administative remarks and ML related things
-[__Cluster and private runner usage__](/ADMINISTRATION.md)
+## Some ML related links 
 
 [__Interesting machine learning resources__](/ML.md)
 
