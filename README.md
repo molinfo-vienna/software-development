@@ -35,11 +35,15 @@ Please only use the Mol-Info GitHub page for code/repos that you create during t
 Add then the team members to your repo and do awesome work!
 
 
-### Server Usage and self-hosted runners
+## CDPKit, Server Usage, and self-hosted runners
 
 The [Molecular-Informatics Platform]() provides a server and self hosted runners. The best practices can be found [here](https://wiki.univie.ac.at/pages/viewpage.action?spaceKey=ChemInfo&title=Cheminformatics+Research+Group+Wiki+Home).
 You have to first define your university and then log in with your credentials.
 If you do not have access, please write either Thomas Seidel (thomas.seidel@univie.ac.at), or Oliver Wieder (oliver.wieder@univie.ac.at) and we will add you to the user list.
+
+### CDPKit
+
+The Chemical Data Processing Toolkit is a toolkit developed by Thomas Seidel and the documentation can be found [here](http://a7srv2.pch.univie.ac.at/cdpkit/). Currently it is only accessable within the University of Vienna or via the [Univie VPN](https://zid.univie.ac.at/vpn/).
 
 
 # Content of the software development guide:
