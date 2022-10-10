@@ -22,7 +22,7 @@ There are a few practices we consider worth following.
     The Cheminfo team has also a team calendar and a mailing list. If you are not part of them yet, depending on the team, please write your admin.
 2. <b>Software practices:</b>
 
-    We would like you to read through the software debelopment guide starting [here](/IDE.md) and follow the [coding best practices](/BEST_PRACTICE.md). This is by no means a complete guide, but highlights a few practices we would like you to follow.
+    We would like you to read through the software development guide starting [here](/IDE.md) and follow the [coding best practices](/BEST_PRACTICE.md). This is by no means a complete guide, but highlights a few practices we would like you to follow.
 3. <b>General or specific issues, commenting, or bug reporting:</b>
 
     You can simply do that by going to the repository of your choice and then add an issue.
