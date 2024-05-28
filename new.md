@@ -2,9 +2,6 @@
 # Best Practices for Python Projects in the CD-Lab MIB
 
 ## Motivation for Adopting Best Practices in Coding
-
-### Enhance Code Visibility and Career Opportunities
-
 As PhD and Master’s students, you are often at the forefront of research and innovation, developing code that can lead to significant academic and technological advancements. By adopting the coding best practices outlined in this guide, you not only enhance the quality and maintainability of your projects but also dramatically increase their visibility within and beyond the academic community.
 
 **Increased Job Prospects**: Employers in both academia and industry are increasingly valuing candidates who demonstrate a commitment to code quality and collaborative development practices. Showcasing well-maintained, clearly documented, and easily accessible projects on platforms like GitHub makes your work more discoverable and appealing to potential employers.
@@ -17,184 +14,77 @@ As PhD and Master’s students, you are often at the forefront of research and i
 
 In essence, by integrating these best practices into your development workflow, you're not just enhancing your current projects—you're setting a foundation for future success and recognition in your professional journey. This approach not only benefits your individual career but also contributes to the broader scientific community by fostering a culture of excellence and openness in research development.
 
-#####
-
 This guide outlines essential practices for maintaining a high-quality Python codebase, including using linting, type hinting, documentation, and code analysis tools. It specifies integrating these tools with GitHub Actions, utilizing local runners.
 
-## Linting and Code Style
+## Linting (Code Style and Type Hinting)
+- **Implement Linting Tools**: Utilize linting tools such as Flake8, Black, Bandit, Isort and Mypy to enforce coding standards and promote consistent code style across the project.
+  - **Bandit**: Identifies potential security issues in Python code. `bandit -r --skip=B404,B603,B602 .`
+  - **Black**: Formats code for consistent style, reducing the need for stylistic reviews. `black --check .`
+  - **Flake8**: Analyzes code to catch syntax errors, bugs, and stylistic errors. `flake8 --extend-ignore=D203,E203,E501,W503 .`
+  - **Isort**: Sorts imports alphabetically and automatically separates them into sections. `isort --profile black --check-only .`
+  - **Mypy**: Checks and enforces type hints, improving code reliability and aiding in early detection of type-related errors. First install missing types: `mypy --install-types --non-interactive`. Then run mypy: `mypy --ignore-missing-imports --disallow-any-generics --disallow-untyped-defs --no-implicit-optional --disallow-incomplete-defs .`
+  - **PyLint**: Another popular tool for enforcing coding standards and identifying potential issues. First install all required packages: `pip install $(find /app/linting/ -name "requirement*" -type f -printf ' -r %p')`. Then run PyLint on all files: `find . -type f -name "*.py" | xargs pylint -d C0301,R0913,W1202 --ignored-modules "rdkit"`
+- **Implementation**: These tools should be configured to run in a GitHub Actions workflow using local runners to ensure that every commit adheres to established coding standards. To install these tools, use `pip install flake8 black bandit isort mypy pylint`.
 
-- **Implement Linting Tools**: Utilize linting tools such as Flake8, Black, Bandit, and Isort to enforce coding standards and promote consistent code style across the project.
-  - **Flake8**: Analyzes code to catch syntax errors, bugs, and stylistic errors.
-  - **Black**: Formats code for consistent style, reducing the need for stylistic reviews.
-  - **Bandit**: Identifies potential security issues in Python code.
-  - **Isort**: Sorts imports alphabetically and automatically separates them into sections.
-  - **Implementation**: These tools should be configured to run in a GitHub Actions workflow using local runners to ensure that every commit adheres to established coding standards.
-
-## Type Hinting and Documentation
-
-- **Enforce Type Hinting**: Use Mypy to enforce type hinting throughout the codebase.
-  - **Mypy**: Checks and enforces type hints, improving code reliability and aiding in early detection of type-related errors.
-- **Use PyDoc-Style Documentation**: Adhere to PyDoc conventions for documenting code functions and modules.
-  - **DocSig Interrogate**: Automates the validation of documentation against the code it documents, ensuring accuracy and completeness.
-- **Parameter Definition and Documentation**: Every function parameter should be clearly defined with appropriate types and descriptive comments, enhancing maintainability and ease of use.
-
-## Code Analysis Tools
-
-- **Utilize Code Analysis Tools**: Integrate tools such as SonarQube or Codacy to analyze code quality and maintainability.
-  - These tools help detect issues, bugs, and code smells, offering insights into improving code quality.
+## Documentation
+- **Use Docstring Documentation**: Adhere to PEP 257 guidelines for docstring conventions, ensuring clear and consistent documentation throughout the codebase.
+- **Automate Documentation Checks**: Integrate tools like Docsig, Interrogate, and Pydocstyle to automate documentation validation and enforce consistency.
+  - **Docsig**: Checks that the docstring of a function matches its signature, ensuring consistency and accuracy. `docsig -C -D -m -N -o -p .`
+  - **Interrogate**: Automates the validation of documentation against the code it documents, ensuring accuracy and completeness. `interrogate -O -vv .`
+  - **Pydocstyle**: Enforces adherence to docstring conventions, enhancing code readability and maintainability. `pydocstyle .`
+- **Parameter Definition and Documentation**: Every function parameter should be clearly defined with appropriate types and descriptive comments, enhancing maintainability and ease of use. The above tools can help enforce these practices. To install these tools, use `pip install docsig interrogate pydocstyle`.
 
 ## Testing Stage
-
 - **Continuous Strive for High Test Coverage**: Maintain high test coverage across unit tests to ensure reliability and minimize regressions.
   - Tools like pytest and coverage.py should be configured to measure test effectiveness and coverage.
-
-## GitHub Actions Integration
-
-All the above tools and practices should be integrated into a GitHub Actions workflow, ensuring they are automatically applied to every push or pull request. The following section (in a subsequent post) will provide a detailed example of the GitHub Actions YAML configuration file that implements these best practices using local runners.
-
----
-
-This framework sets a structured approach to code quality and consistency, essential for collaborative projects. The next step will be to provide an example YAML file to showcase how to set up and execute these practices within a GitHub Actions workflow.
+- **Implement Tests**: Write unit tests for all functions and classes, ensuring that each component behaves as expected under various conditions. Tests should be located within the repository under a `tests/` directory. Running all tests should be possible via `python -m unittest discover -v -s tests -p *.py -t .`.
+- **Automate Testing**: Integrate the testing stage into you github actions to ensure that every commit is tested automatically.
 
 ## Packaging with PyPI
-
 Packaging your Python project properly is crucial for distribution and reuse. Here's how to prepare and distribute your project via PyPI, the Python Package Index.
 
 ### Preparing Your Package
-
 1. **Structure Your Project**: Organize your project files in a directory with a clear structure. Typically, this includes:
-   - A `src/` directory where your package code resides.
+   - A `<module_name>/` directory where your package code resides.
    - A `tests/` directory for your unit tests.
-   - Necessary files like `README.md`, `LICENSE`, `setup.py`, and `requirements.txt`.
+   - Necessary files like `README.md`, `LICENSE`, `pyproject.toml`, and `requirements.txt`.
 
-2. **Create a `setup.py` File**: This script is essential for packaging your project. It should include metadata about your package like its name, version, author, and more. Dependencies listed in `requirements.txt` should be included under `install_requires` to ensure they are installed when your package is installed.
+2. **Create a `pyproject.toml` File**: This script is essential for packaging your project. It should include metadata about your package like its name, version, author, and more. Dependencies listed in `requirements.txt` should be included under `install_requires` to ensure they are installed when your package is installed.
+```toml
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
-   ```python
-   from setuptools import setup, find_packages
+[project]
+dynamic = ["dependencies", "optional-dependencies"]
+name = "<module_name>"
+authors = [
+    {name = "Contributor 1"},
+    {name = "Contributor 2"}
+]
+description = "<description>"
+version = "<version>"
+readme = "README.md"
 
-   setup(
-       name='your_package_name',
-       version='0.1.0',
-       packages=find_packages(where="src"),
-       package_dir={"": "src"},
-       install_requires=[
-           'numpy',  # Example dependency, specify your project's dependencies here
-           'requests'
-       ],
-       # Additional metadata like author, classifiers, etc.
-   )
-   ```
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
 
-3. **Include a `MANIFEST.in`**: This file tells Python what files to include in the distribution package besides the ones in `setup.py`.
+[tool.setuptools.dynamic.optional-dependencies]
+all = {file = ["requirements_1.txt", "requirements_2.txt"]}
+one = {file = ["requirements_1.txt"]}
+two = {file = ["requirements_2"]}
 
-   ```
-   include LICENSE
-   include README.md
-   recursive-include data *
-   ```
+[tool.setuptools.packages.find]
+exclude = ["tests", "docs"]
 
-4. **Versioning**: Maintain clear versioning that adheres to semantic versioning standards. This helps users understand the extent of changes in each release.
-
-### Distributing Your Package
-
-1. **Build Your Package**: Use the following command to generate distribution archives for the package.
-   ```bash
-   python setup.py sdist bdist_wheel
-   ```
-
-2. **Upload to PyPI**: Use Twine to upload your package to PyPI. First, install Twine via pip:
-   ```bash
-   pip install twine
-   ```
-   Then, run Twine to upload your distribution archives:
-   ```bash
-   twine upload dist/*
-   ```
-
-3. **Maintain Your Package**: Keep your package updated with bug fixes, improvements, and compatibility with dependencies and Python versions. Use version tagging and GitHub releases to manage these updates transparently.
-
-### Integration with GitHub Actions
-
-Include steps in your GitHub Actions workflow to automate testing, building, and deploying your package to PyPI. This ensures that every release meets quality standards and simplifies the release process. In the next section, we will provide a detailed example of the GitHub Actions YAML configuration file that accomplishes this integration along with the previous best practices.
-
-
-## GitHub Actions Workflow Example
-
-Here's an example YAML configuration file for GitHub Actions, demonstrating how to incorporate linting, testing, type hinting, and packaging for a Python project. This file also shows how to automate the deployment of the package to PyPI using local runners.
-
-```yaml
-name: Python Package CI/CD
-
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-jobs:
-  build-and-test:
-    runs-on: self-hosted
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
-        
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install flake8 pytest pytest-cov mypy black bandit isort twine
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        
-    - name: Lint with Flake8
-      run: flake8 src/ tests/
-      
-    - name: Check import order with Isort
-      run: isort --check-only src/ tests/
-      
-    - name: Format code with Black
-      run: black --check src/ tests/
-      
-    - name: Security check with Bandit
-      run: bandit -r src/
-      
-    - name: Type check with Mypy
-      run: mypy src/
-      
-    - name: Run pytest
-      run: pytest --cov=src tests/
-      
-    - name: Build package
-      run: python setup.py sdist bdist_wheel
-      
-    - name: Publish to PyPI
-      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      run: twine upload dist/*
-      env:
-        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
-        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-
+[tool.setuptools.package-data]
+"<module_name>" = ["py.typed"]
 ```
 
-### Explanation of the Workflow
+3. **Versioning**: Maintain clear versioning that adheres to semantic versioning standards. This helps users understand the extent of changes in each release.
 
-- **Trigger**: The workflow is triggered on push or pull requests to the `main` branch.
-- **Build and Test Job**: This job uses a self-hosted runner.
-  - **Checkout**: The current repository code is checked out.
-  - **Set up Python**: Python 3.8 is set up for use in the runner.
-  - **Install dependencies**: Essential tools and project-specific dependencies are installed.
-  - **Linting and Formatting**: Flake8, Isort, and Black are used to ensure code quality and style.
-  - **Security Checks**: Bandit performs a static analysis for security vulnerabilities.
-  - **Type Checking**: Mypy checks for type consistency.
-  - **Testing**: Pytest runs tests and measures code coverage.
-  - **Build Package**: The project is packaged into distributable formats.
-  - **Publish to PyPI**: If conditions are met (push to main branch), the package is uploaded to PyPI using Twine.
+### Distributing Your Package
+For releasing your package on PyPI, follow this guide: https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
 
-### Running the Workflow
-
-To run this workflow, simply push changes to your `main` branch or create a pull request against it. The workflow will execute automatically, ensuring your code adheres to quality standards and is packaged correctly for distribution. Ensure that PyPI credentials (`PYPI_USERNAME` and `PYPI_PASSWORD`) are securely stored in your GitHub repository's secrets.
-
-This comprehensive approach leverages GitHub Actions with local runners to maintain high standards in your Python project, automating testing, linting, security checks, type checking, and deployment to PyPI.
+## GitHub Actions Integration
+All the above tools and practices should be integrated into a GitHub Actions workflow, ensuring they are automatically applied to every push or pull request. The following section (in a subsequent post) will provide a detailed example of the GitHub Actions YAML configuration file that implements these best practices using local runners. For further information, refer to the GitHub Actions documentation and [here](./GITHUB_ACTIONS.md).
