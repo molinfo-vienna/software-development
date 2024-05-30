@@ -8,6 +8,17 @@ In order to maximize collaborations and reusability of each project, we recommen
 This allows for easy access to your code, reduces the time to implement new features, and collaborate with others. 
 If you are working on sensitive topics that should not be public, you do not have to deploy to [Conda](https://anaconda.org/) or [PyPI](https://pypi.org/).
 
+
+
+## Motivation for Adopting Best Practices in Coding
+As PhD and Master’s students, you are often at the forefront of research and innovation, developing code that can lead to significant academic and technological advancements. By adopting the coding best practices outlined in this guide, you not only enhance the quality and reliability of your code but also contribute to a more collaborative and efficient research environment.
+
+# Minimum requirements working on code in the CD-Lab MIB:
+
+## Importance of Following GitHub Actions Guidelines
+Our collaborating companies have emphasized the need for consistent and robust practices in our coding projects. **To ensure this, we must follow the [GitHub Actions Guidelines](/GITHUB_ACTIONS.md) for each new project**. These guidelines help automate workflows, improve code quality, and maintain a high standard across all our projects.
+The GitHub Actions Guidlines includes also [linting](/LINTING.md), [testing](/CI_CD_TEST.md), type hinting, and [packaging](/PACKAGING.md) for a Python project.
+
 # Administrative
 
 ### New to the team?

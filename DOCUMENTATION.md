@@ -24,6 +24,13 @@ Some useful badges:
 - [Zenodo DOI badge](https://guides.github.com/activities/citable-code/)
 
 
+- **Use Docstring Documentation**: Adhere to PEP 257 guidelines for docstring conventions, ensuring clear and consistent documentation throughout the codebase.
+- **Automate Documentation Checks**: Integrate tools like Docsig, Interrogate, and Pydocstyle to automate documentation validation and enforce consistency.
+  - **Docsig**: Checks that the docstring of a function matches its signature, ensuring consistency and accuracy. `docsig -C -D -m -N -o -p .`
+  - **Interrogate**: Automates the validation of documentation against the code it documents, ensuring accuracy and completeness. `interrogate -O -vv .`
+  - **Pydocstyle**: Enforces adherence to docstring conventions, enhancing code readability and maintainability. `pydocstyle .`
+- **Parameter Definition and Documentation**: Every function parameter should be clearly defined with appropriate types and descriptive comments, enhancing maintainability and ease of use. The above tools can help enforce these practices. To install these tools, use `pip install docsig interrogate pydocstyle`.
+
 There are many tools that can be used to write documentation. The easiest to start with is the GitHub wiki, which uses markdown syntax just like the rest of GitHub.
 
 ### GitHub wiki

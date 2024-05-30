@@ -30,6 +30,44 @@ The user can also [manage multiple environments this way](http://conda.pydata.or
 Packages with compiled components or binary libraries that must be distributed alongside them can generally not be deployed via PyPI.
 While this is changing with wider support for Python wheels (see [PEP 427](https://www.python.org/dev/peps/pep-0427/), [PEP 491](https://www.python.org/dev/peps/pep-0491/), and [PEP 513](https://www.python.org/dev/peps/pep-0513/)), the recommended approach for codes that depend on platform-specific libraries is the `conda` scheme described below.
 
+### Preparing Your Package
+**Structure Your Project**: Organize your project files in a directory with a clear structure. Typically, this includes:
+   - A `<module_name>/` directory where your package code resides.
+   - A `tests/` directory for your unit tests.
+   - Necessary files like `README.md`, `LICENSE`, `pyproject.toml`, and `requirements.txt`.
+
+**Create a `pyproject.toml` File**: This script is essential for packaging your project. It should include metadata about your package like its name, version, author, and more. Dependencies listed in `requirements.txt` should be included under `install_requires` to ensure they are installed when your package is installed.
+```toml
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["dependencies", "optional-dependencies"]
+name = "<module_name>"
+authors = [
+    {name = "Contributor 1"},
+    {name = "Contributor 2"}
+]
+description = "<description>"
+version = "<version>"
+readme = "README.md"
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
+
+[tool.setuptools.dynamic.optional-dependencies]
+all = {file = ["requirements_1.txt", "requirements_2.txt"]}
+one = {file = ["requirements_1.txt"]}
+two = {file = ["requirements_2"]}
+
+[tool.setuptools.packages.find]
+exclude = ["tests", "docs"]
+
+[tool.setuptools.package-data]
+"<module_name>" = ["py.typed"]
+```
+
 #### Distributing your code with PyPI
 
 If you have a pure Python package you would like to upload to PyPI and have already structured it to be installable by a `setup.py` that makes use of [`distutils`](https://docs.python.org/3/library/distutils.html), uploading your package is very easy.
@@ -39,6 +77,8 @@ python setup.py register -r pypi
 python setup.py sdist upload -r pypi
 ```
 It is *highly recommended* that you first upload your package to the [PyPI testing site](https://testpypi.python.org) before uploading it to the live PyPI.
+
+**Versioning**: Maintain clear versioning that adheres to semantic versioning standards. This helps users understand the extent of changes in each release.
 
 ### Conda
 
