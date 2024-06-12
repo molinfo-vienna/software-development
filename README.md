@@ -64,14 +64,6 @@ It can be easily installed via:
 pip install cdpkit
 ```
 
-# Minimum Requirements Working on Code in the CD-Lab MIB:
-
-## Importance of Following GitHub Actions Guidelines
-
-Our collaborating companies have emphasized the need for consistent and robust practices in our coding projects. **To ensure this, we must follow the [GitHub Actions Guidelines](/GITHUB_ACTIONS.md) for each new project**. These guidelines help automate workflows, improve code quality, and maintain a high standard across all our projects.
-The GitHub Actions Guidlines includes also [linting, type hinting](/LINTING.md), [CI, CD, testing](/CI_CD_TEST.md), and [packaging](/PACKAGING.md) for a Python project.
-Another important note is the usage of pip package manager over conda. If possible use pip instead of conda.
-
 
 # Content of the software development guide:
 
@@ -107,7 +99,15 @@ Choose a proper licence
 
 [__Interesting machine learning resources__](/ML.md)
 
-## Related Guides
+# Minimum Requirements Working on Code in the CD-Lab MIB:
+
+## Importance of Following GitHub Actions Guidelines
+
+Our collaborating companies have emphasized the need for consistent and robust practices in our coding projects. **To ensure this, we must follow the [GitHub Actions Guidelines](/GITHUB_ACTIONS.md) for each new project**. These guidelines help automate workflows, improve code quality, and maintain a high standard across all our projects.
+The GitHub Actions Guidlines includes also [linting, type hinting](/LINTING.md), [CI, CD, testing](/CI_CD_TEST.md), and [packaging](/PACKAGING.md) for a Python project.
+Another important note is the usage of pip package manager over conda. If possible use pip instead of conda.
+
+# Related Guides
 
 Be sure to check out these related guides and materials:
 * [MolSSI Software Best Practices](https://molssi.org/education/best-practices/)
@@ -115,7 +115,7 @@ Be sure to check out these related guides and materials:
 * [Software Sustainability Institute Guides](https://software.ac.uk/resources/guides)
 * [Chodera-Lab Software Development](https://github.com/choderalab/software-development/blob/master/README.md)
 
-## Help Make this Page Better
+# Help Make this Page Better
 
 Want to contribute to this repository? Want to report a bug? Have a suggestion for an improvement?
 Spot a typo? We're always looking to improve this document for the betterment of all.
