@@ -14,6 +14,11 @@ As python is an [interpreted language](https://en.wikipedia.org/wiki/Interpreter
 For scientists and developers, doing these steps manually takes a long time - so a big part of CI is about automating that process.
 This is were testing come in handy.
 
+- **Continuous Strive for High Test Coverage**: Maintain high test coverage across unit tests to ensure reliability and minimize regressions.
+  - Tools like pytest and coverage.py should be configured to measure test effectiveness and coverage.
+- **Implement Tests**: Write unit tests for all functions and classes, ensuring that each component behaves as expected under various conditions. Tests should be located within the repository under a `tests/` directory. Running all tests should be possible via `python -m unittest discover -v -s tests -p *.py -t .`.
+- **Automate Testing**: Integrate the testing stage into you github actions to ensure that every commit is tested automatically.
+
 ### Unit Testing
 
 Writing test while writing code is a good practice and makes you code more reliable and prone to failure or bugs.
