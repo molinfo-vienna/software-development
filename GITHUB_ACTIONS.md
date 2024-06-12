@@ -5,7 +5,7 @@ Include steps in your GitHub Actions workflow to automate testing, building, and
 
 ## GitHub Actions Workflow Example
 
-Here's an example YAML configuration file for GitHub Actions, demonstrating how to incorporate [linting](/LINTING.md), [testing](/CI_CD_TEST.md), type hinting, and [packaging](/PACKAGING.md) for a Python project. This file also shows how to automate the deployment of the package to PyPI using local runners.
+Here's an example YAML configuration file for GitHub Actions, demonstrating how to incorporate [linting, type hinting](/LINTING.md), [CI, CD, testing](/CI_CD_TEST.md), and [packaging](/PACKAGING.md) for a Python project. This file also shows how to automate the deployment of the package to PyPI using local runners.
 
 ```yaml
 name: Python Package CI/CD
