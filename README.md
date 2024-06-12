@@ -17,7 +17,7 @@ As PhD and Master’s students, you are often at the forefront of research and i
 This page is split into **two** parts. One part is about general good-practices, wheras the second part is about the specifics of the CD-Lab Molecular Informatics in the Biosciences (CD-Lab MIB) platform.
 
 1. Read through all of the documentation to get a grasp of general good-practices
-2. Read through the minimum requirement **minimum** requirements that need to be met working with our collaborators in the CD-Lab Molecular Informatics in the Biosciences - see the [Minimum requirements working on code in the CD-Lab MIB:](/README.md#minimum-requirements-working-on-code-in-the-cd-lab-mib). 
+2. Read through **minimum** requirements that need to be met working with our collaborators in the CD-Lab Molecular Informatics in the Biosciences - see the [Minimum requirements working on code in the CD-Lab MIB:](/README.md#minimum-requirements-working-on-code-in-the-cd-lab-mib). 
 
 # Administrative
 
