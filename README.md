@@ -1,27 +1,28 @@
 # The public good-practice page for the Molecular Informatics platform
 
 The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch rather than the project set up.
-The platform consists of three teams, [Christian-Doppler Laboratory for Molecular Infomatics in the Bioscience team]() the [Cheminfo team](https://cheminfo.univie.ac.at/home/), and the [comp3d team](https://comp3d.univie.ac.at/). It is 
+The platform consists of three teams, [Christian-Doppler Laboratory for Molecular Infomatics in the Bioscience team]() the [Cheminfo team](https://cheminfo.univie.ac.at/home/), and the [comp3d team](https://comp3d.univie.ac.at/).
 
 This setup guide is for everyone wanting to set up a molecular informatics project in python project quickly and easily.
 In order to maximize collaborations and reusability of each project, we recommend making a package out of your project.
 This allows for easy access to your code, reduces the time to implement new features, and collaborate with others. 
-If you are working on sensitive topics that should not be public, you do not have to deploy to [Conda](https://anaconda.org/) or [PyPI](https://pypi.org/).
+If you are working on sensitive topics that should not be public.
 
+## Motivation for Adopting Good-Practices in Coding
 
-
-## Motivation for Adopting Best Practices in Coding
 As PhD and Master’s students, you are often at the forefront of research and innovation, developing code that can lead to significant academic and technological advancements. By adopting the coding best practices outlined in this guide, you not only enhance the quality and reliability of your code but also contribute to a more collaborative and efficient research environment.
 
-# Minimum requirements working on code in the CD-Lab MIB:
+## General Outline
 
-## Importance of Following GitHub Actions Guidelines
-Our collaborating companies have emphasized the need for consistent and robust practices in our coding projects. **To ensure this, we must follow the [GitHub Actions Guidelines](/GITHUB_ACTIONS.md) for each new project**. These guidelines help automate workflows, improve code quality, and maintain a high standard across all our projects.
-The GitHub Actions Guidlines includes also [linting](/LINTING.md), [testing](/CI_CD_TEST.md), type hinting, and [packaging](/PACKAGING.md) for a Python project.
+This page is split into **two** parts. One part is about general good-practices, wheras the second part is about the specifics of the CD-Lab Molecular Informatics in the Biosciences (CD-Lab MIB) platform.
+
+1. Read through all of the documentation to get a grasp of general good-practices
+2. Read through the minimum requirement **minimum** requirements that need to be met working with our collaborators in the CD-Lab Molecular Informatics in the Biosciences - see the [Minimum requirements working on code in the CD-Lab MIB:](/README.md#minimum-requirements-working-on-code-in-the-cd-lab-mib). 
 
 # Administrative
 
 ### New to the team?
+
 First of all: `Welcome to the Molecular Informatics platform!`
 
 We are glad to have you on-board :)
@@ -54,7 +55,22 @@ If you do not have access, please write either Thomas Seidel (thomas.seidel@univ
 
 ### CDPKit
 
-The [Chemical Data Processing Toolkit](https://github.com/molinfo-vienna/CDPKit) is a toolkit developed by Thomas Seidel and the documentation can be found [here](http://a7srv2.pch.univie.ac.at/cdpkit/). Currently it is only accessable within the University of Vienna or via the [Univie VPN](https://zid.univie.ac.at/vpn/).
+The [Chemical Data Processing Toolkit](https://github.com/molinfo-vienna/CDPKit) is a toolkit developed by Thomas Seidel and the documentation can be found [here](https://cdpkit.org/v1.1.1/index.html).
+The CDPKit is an open-source cheminformatics toolkit implemented in C++. CDPKit comprises a suite of software tools and a programming library called the Chemical Data Processing Library (CDPL) which provides a high-quality and well-tested modular implementation of basic functionality typically required by any higher-level software application in the field of cheminformatics. In addition to the CDPL C++ API, an equivalent Python-interfacing layer is provided that allows to harness all of CDPL’s functionality easily from Python code.
+
+It can be easily installed via:
+
+```bash
+pip install cdpkit
+```
+
+# Minimum Requirements Working on Code in the CD-Lab MIB:
+
+## Importance of Following GitHub Actions Guidelines
+
+Our collaborating companies have emphasized the need for consistent and robust practices in our coding projects. **To ensure this, we must follow the [GitHub Actions Guidelines](/GITHUB_ACTIONS.md) for each new project**. These guidelines help automate workflows, improve code quality, and maintain a high standard across all our projects.
+The GitHub Actions Guidlines includes also [linting](/LINTING.md), [testing](/CI_CD_TEST.md), type hinting, and [packaging](/PACKAGING.md) for a Python project.
+
 
 
 # Content of the software development guide:
@@ -62,10 +78,6 @@ The [Chemical Data Processing Toolkit](https://github.com/molinfo-vienna/CDPKit)
 [__Integrated Development Environment Software__](/IDE.md):
 
 For everyone interested in getting started right away with a proper IDE and package management
-
-[__Licencing__](/LICENCING.md)
-
-Choose a proper licence
 
 [__Project Structure__](/PROJECT_STRUCTURE.md):
 
@@ -79,7 +91,7 @@ The main idea behind version control
 
 Build your code frequently while making making sure your code does what you want it to do without breaking
 
-[__Documentation__](/DOCUMENTATION.md):
+[__Documentation and Linting__](/DOCUMENTATION.md):
 
 Make it easier for you and collaborators to understand what your code tries to achieve
 
@@ -87,6 +99,9 @@ Make it easier for you and collaborators to understand what your code tries to a
 
 Make your code visible and easy to use
 
+[__Licencing__](/LICENCING.md)
+
+Choose a proper licence
 
 ## Some ML related links 
 

@@ -119,4 +119,4 @@ The [Omnia](http://www.omnia.md/) software consortium was formed to make deploym
 The [Omnia build system](https://github.com/omnia-md/conda-recipes/blob/master/README.md) is similar to [Conda-Forge](https://conda-forge.github.io/), but uses specialized build infrastructure that provides CUDA and OpenCL capabilities.
 Instructions for contributing a recipe for building and deploying your code through Omnia can be found [here](https://github.com/omnia-md/conda-recipes/blob/master/README.md#contributing-a-recipe).
 
-__Back:__ [__README__](/README.md)
+__Next Chapter:__ [__Licencing__](/LICENCING.md)
