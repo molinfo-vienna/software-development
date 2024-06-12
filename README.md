@@ -83,6 +83,10 @@ The main idea behind version control
 
 Build your code frequently while making making sure your code does what you want it to do without breaking
 
+[__Github Actions__](/GITHUB_ACTIONS.md)
+
+A guide to Github Actions
+
 [__Documentation and Linting__](/DOCUMENTATION.md):
 
 Make it easier for you and collaborators to understand what your code tries to achieve

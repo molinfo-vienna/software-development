@@ -68,4 +68,6 @@ One important note is that when using self hosted runners `ALWAYS` use private r
 We provide self hosted runners for GitHub Actions CI/CD - the how to use them can be found [here](https://github.com/molinfo-vienna/software-development/blob/main/ADMINISTRATION.md#server-usage-and-self-hosted-runners)
 
 
+__Next Chapter:__ [__Github Actions__](/GITHUB_ACTIONS.md)
+
 __Next Chapter:__ [__Documentation__](/DOCUMENTATION.md)
