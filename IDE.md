@@ -27,4 +27,4 @@ Regarding conda - a fun read about myths and misconceptions of conda can be foun
 **Local installation**
 When working with your own code as a package and you want to reference it locally, it is often recommended to do a "local" python install via ```pip install -e .``` - this works only if you are in the root folder of your package. This command will insert your new project into your Python site-packages folder so that it can be found in any directory on your computer.
 
-__Next Chapter:__ [__Licencing__](/LICENCING.md)
+__Next Chapter:__ [__Project Structure__](/PROJECT_STRUCTURE.md)

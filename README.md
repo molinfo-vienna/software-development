@@ -69,7 +69,7 @@ pip install cdpkit
 ## Importance of Following GitHub Actions Guidelines
 
 Our collaborating companies have emphasized the need for consistent and robust practices in our coding projects. **To ensure this, we must follow the [GitHub Actions Guidelines](/GITHUB_ACTIONS.md) for each new project**. These guidelines help automate workflows, improve code quality, and maintain a high standard across all our projects.
-The GitHub Actions Guidlines includes also [linting](/LINTING.md), [testing](/CI_CD_TEST.md), type hinting, and [packaging](/PACKAGING.md) for a Python project.
+The GitHub Actions Guidlines includes also [linting, type hinting](/LINTING.md), [CI, CD, testing](/CI_CD_TEST.md), and [packaging](/PACKAGING.md) for a Python project.
 
 
 
