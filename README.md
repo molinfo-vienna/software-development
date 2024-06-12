@@ -12,7 +12,7 @@ If you are working on sensitive topics that should not be public.
 
 As PhD and Master’s students, you are often at the forefront of research and innovation, developing code that can lead to significant academic and technological advancements. By adopting the coding best practices outlined in this guide, you not only enhance the quality and reliability of your code but also contribute to a more collaborative and efficient research environment.
 
-## General Outline
+## General Outline and Minimum Requirements
 
 This page is split into **two** parts. One part is about general good-practices, wheras the second part is about the specifics of the CD-Lab Molecular Informatics in the Biosciences (CD-Lab MIB) platform.
 
