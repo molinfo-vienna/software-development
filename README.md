@@ -70,12 +70,12 @@ pip install cdpkit
 
 Our collaborating companies have emphasized the need for consistent and robust practices in our coding projects. **To ensure this, we must follow the [GitHub Actions Guidelines](/GITHUB_ACTIONS.md) for each new project**. These guidelines help automate workflows, improve code quality, and maintain a high standard across all our projects.
 The GitHub Actions Guidlines includes also [linting, type hinting](/LINTING.md), [CI, CD, testing](/CI_CD_TEST.md), and [packaging](/PACKAGING.md) for a Python project.
-
+Another important note is the usage of pip package manager over conda. If possible use pip instead of conda.
 
 
 # Content of the software development guide:
 
-[__Integrated Development Environment Software__](/IDE.md):
+[__Integrated Development Environment Software AND Package Management__](/IDE.md):
 
 For everyone interested in getting started right away with a proper IDE and package management
 

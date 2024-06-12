@@ -16,6 +16,11 @@ By following the recommendations in the previous chapters you are already at a g
 
 ### The Python Package Index (PyPI)
 
+**You dont necearrily need to publish your code to PyPI.** in order to have a "package". You can also install your package locally from your source folder via:
+```bash
+pip install .
+```
+
 If your package is pure Python, it's easy to package and deploy to a very wide audience via the [Python Package Index](https://pypi.python.org/pypi).
 This site greatly simplifies installation from the user perspective via the tool [`pip`](https://pip.pypa.io) which is available almost universally in common Python distributions.
 Installation of a tool like [`pymbar`](https://github.com/choderalab/pymbar) is simplified to:
@@ -35,6 +40,8 @@ While this is changing with wider support for Python wheels (see [PEP 427](https
    - A `<module_name>/` directory where your package code resides.
    - A `tests/` directory for your unit tests.
    - Necessary files like `README.md`, `LICENSE`, `pyproject.toml`, and `requirements.txt`.
+
+**Create a `requirements.txt` File**: This file should list all the Python packages that your code depends on.
 
 **Create a `pyproject.toml` File**: This script is essential for packaging your project. It should include metadata about your package like its name, version, author, and more. Dependencies listed in `requirements.txt` should be included under `install_requires` to ensure they are installed when your package is installed.
 ```toml

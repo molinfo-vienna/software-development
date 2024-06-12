@@ -1,4 +1,4 @@
-# Integrated Development Environment Software (IDE)
+# Integrated Development Environment Software (IDE) AND Python Package Management
 
 ### General
 
