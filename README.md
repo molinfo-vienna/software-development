@@ -38,7 +38,7 @@ If you're new to the group or to coding in general, we recommend starting with t
 2. Learn about proper [Project Structure](./PROJECT_STRUCTURE.md).
 3. Familiarize yourself with our [Documentation and Linting](./DOCUMENTATION.md) guidelines.
 4. Understand the basics of [Version Control](./VERSION_CONTROL.md).
-5. Learn about [Testing](./CI_CD_TEST.md#testing) your code.
+5. Learn about [Testing](./TEST.md) your code.
 
 For those looking to dive deeper or contribute to more complex projects, check out the Advanced Topics section.
 
@@ -46,8 +46,8 @@ For those looking to dive deeper or contribute to more complex projects, check o
 
 When working on code in the CD-Lab Molecular Informatics in the Biosciences, please ensure you follow these minimum requirements:
 
-1. Adhere to the [GitHub Actions Guidelines](./GITHUB_ACTIONS.md) for each new project.
-2. Implement [linting, type hinting](./LINTING.md), [CI, CD, testing](./CI_CD_TEST.md), and [packaging](./PACKAGING.md) for your Python projects.
+1. Adhere to the [CI/CD Guidelines](./CI.md) and the [advanced](./ADVANCED_CI_CD.md) section for each new project.
+2. Implement [linting](./LINTING.md), [good documentation](./DOCUMENTATION.md), and [packaging](./PACKAGING.md) for your Python projects.
 3. Use pip package manager over conda when possible.
 
 ## Administrative Information
