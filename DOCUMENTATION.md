@@ -134,4 +134,5 @@ mypy your_script.py
 
 For more detailed information on documentation tools and advanced linting setups, refer to our [GitHub Actions guide](./GITHUB_ACTIONS.md).
 
-Next Chapter: [Packaging and Continuous Deployment](./PACKAGING.md)
+__Next Chapter:__ [__VERSION_CONTROL__](/VERSION_CONTROL.md)
+__Back:__ [__README__](/README.md)

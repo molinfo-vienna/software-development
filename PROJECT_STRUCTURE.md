@@ -76,4 +76,5 @@ cookiecutter gh:molssi/cookiecutter-cms
 
 By following these guidelines, you'll create a clean, organized project structure that's easy to navigate and maintain.
 
-Next Chapter: [Code Style and Linting](./DOCUMENTATION.md#linting)
+__Next Chapter:__ [__Documentation, Code Style, and Linting__](/DOCUMENTATION.md)
+__Back:__ [__README__](/README.md)

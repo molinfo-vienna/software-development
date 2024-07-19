@@ -17,19 +17,18 @@ This guide is designed to help everyone set up a molecular informatics project i
 
 ### Essential Practices (For Everyone)
 1. [Project Structure](./PROJECT_STRUCTURE.md)
-2. [Code Style and Linting](./DOCUMENTATION.md#linting)
-3. [Documentation](./DOCUMENTATION.md)
-4. [Version Control Basics](./VERSION_CONTROL.md)
-5. [Testing Fundamentals](./CI_CD_TEST.md#testing)
-6. [IDE Setup for Beginners](./IDE.md)
+2. [Documentation, Code Style, and Linting](./DOCUMENTATION.md)
+3. [Version Control Basics](./VERSION_CONTROL.md)
+4. [Testing Fundamentals](./TEST)
+5. [Continues Integration (CI)](./CI.md)
+5. [IDE Setup for Beginners](./IDE.md)
 
 ### Advanced Topics (For Deeper Exploration)
-7. [Advanced Version Control](./VERSION_CONTROL.md)
-8. [Packaging and Distribution](./PACKAGING.md)
-9. [Continuous Integration (CI)](./CI_CD_TEST.md)
-10. [GitHub Actions](./GITHUB_ACTIONS.md)
-11. [Licensing](./LICENCING.md)
-12. [Machine Learning Resources](./ML.md)
+7. [Packaging and Distribution](./PACKAGING.md)
+8. [Advanced Continuous Integration (CI)](./ADVANCED_CI_CD.md)
+9. [GitHub Actions](./ADVANCED_CI_CD.md##Best_Practices_for_CI/CD)
+10. [Licensing](./LICENCING.md)
+11. [Machine Learning Resources](./ML.md)
 
 ## Getting Started
 
@@ -56,7 +55,7 @@ When working on code in the CD-Lab Molecular Informatics in the Biosciences, ple
 ### New to the team?
 
 1. **Communications:** Join our Mattermost channels. The Cheminfo team also has a team calendar and mailing list.
-2. **Software project good-practices:** Read through this software development guide and follow the [coding best practices](./BEST_PRACTICE.md).
+2. **Software project good-practices:** Read through this software development guide and follow the [coding best practices](./README.md).
 3. **Issues and bug reporting:** Use the repository's issue tracker or the [CD-Lab MiB dedicated issue repository](https://github.com/molinfo-vienna/cd_mib_open_issues) for general requests.
 
 After reading the guidelines, create a repo on the [Mol-Info GitHub page](https://github.com/organizations/molinfo-vienna/repositories/new), use the cookiecutter template to set it up locally, and push it to the remote repository.

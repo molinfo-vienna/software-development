@@ -1,6 +1,6 @@
 ## Introduction to Linting, Type Hinting, and Code Style in Python
 
-This is a minimum requirement for your projects working together in the CD-MIB (Another requirement can be found here [this](/GITHUB_ACTIONS.md)).
+This is a minimum requirement for your projects working together in the CD-MIB (Another requirement can be found in the following sections: [CI](/CI.md), [testing](/TEST.md), [advance CI](/ADVANCED_CI_CD.md)).
 
 In the world of software development, maintaining readability, consistency, and error-free code are paramount. This is where the practices of linting, type hinting, and adhering to a code style come into play, especially in dynamic programming languages like Python. These practices not only enhance code quality and maintainability but also streamline collaboration across large teams. Let's delve into what each of these terms means and why they are crucial for writing good Python code.
 
@@ -31,4 +31,4 @@ With these practices in place, developers can avoid common pitfalls in their cod
   - **PyLint**: Another popular tool for enforcing coding standards and identifying potential issues. First install all required packages: `pip install $(find /app/linting/ -name "requirement*" -type f -printf ' -r %p')`. Then run PyLint on all files: `find . -type f -name "*.py" | xargs pylint -d C0301,R0913,W1202 --ignored-modules "rdkit"`
 - **Implementation**: These tools should be configured to run in a GitHub Actions workflow using local runners to ensure that every commit adheres to established coding standards. To install these tools, use `pip install flake8 black bandit isort mypy pylint`.
 
-Look at an automated example [here](/GITHUB_ACTIONS.md##GitHub-Actions-Workflow-Example) that includes linting tools and a GitHub Actions workflow.
+Look at an automated example [here](/ADVANCED_CI_CD.md##Comprehensive GitHub Actions Workflow) that includes linting tools and a GitHub Actions workflow.
