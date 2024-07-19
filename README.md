@@ -1,7 +1,13 @@
-# The public good-practice page for the Molecular Informatics platform
+# The public good-practice page for the Molecular Informatics Vienna platform
 
-The official MolInfo-Vienna guidline for modern molecular informaticians to keep the focus on the reasearch rather than the project set up.
-The platform consists of three teams, [Christian-Doppler Laboratory for Molecular Infomatics in the Bioscience team]() the [Cheminfo team](https://cheminfo.univie.ac.at/home/), and the [comp3d team](https://comp3d.univie.ac.at/).
+First of all: `Welcome :)`
+
+This page is separated into two areas
+
+1. Getting started 
+2. 
+
+The platform consists of three teams, [Christian-Doppler Laboratory for Molecular Infomatics in the Bioscience team](https://cdlab-mib.univie.ac.at/) the [Cheminfo team](https://cheminfo.univie.ac.at/home/), and the [comp3d team](https://comp3d.univie.ac.at/).
 
 This setup guide is for everyone wanting to set up a molecular informatics project in python project quickly and easily.
 In order to maximize collaborations and reusability of each project, we recommend making a package out of your project.
@@ -23,7 +29,7 @@ This page is split into **two** parts. One part is about general good-practices,
 
 ### New to the team?
 
-First of all: `Welcome to the Molecular Informatics platform!`
+First of all: `Welcome to the Molecular Informatics Vienna platform!`
 
 We are glad to have you on-board :)
 

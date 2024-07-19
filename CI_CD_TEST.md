@@ -69,5 +69,3 @@ We provide self hosted runners for GitHub Actions CI/CD - the how to use them ca
 
 
 __Next Chapter:__ [__Github Actions__](/GITHUB_ACTIONS.md)
-
-__Next Chapter:__ [__Documentation__](/DOCUMENTATION.md)

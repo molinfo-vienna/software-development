@@ -1,97 +1,137 @@
 # Documentation and Linting
 
-If you want people to use your project and code, write proper documentation!
-Start as soon as possible! 
-Its more fun to produce code right away, but crucial to produce proper documentation as soon as possible. 
-We would recommend filling up your README.md with what your project `can do`, `how to install` it, including `requirement files`, `how to use` it, `what licence` you have and `where to ask questions`.
+## Documentation
 
-Also define proper documentation for classes, methods, and scripts.
-Without knowing what goes in, what it does, and what comes out how of any code, its hard for people to trust your code.
-Moreover, after some time it is often hard for yourself to remember what you did over the years working on one or several projects.
+Proper documentation is crucial for the usability and maintainability of your project. Start documenting as early as possible in your development process.
 
-In general we recommend the following sites for further details:
-* [Real Python](https://realpython.com/documenting-python-code/) offers an in depth guide for documenting python code.
-* [The Hitchhiker's Guide to Python](https://docs.python-guide.org/writing/documentation/) is not as overloaded and gives a brief insight into another tool ([Sphinx](https://www.sphinx-doc.org/en/master/)).
+### README.md
 
-Many `README.md` files include a series of badges at the top.
-These badges are not only visual indicators of certain information---whether the repo is in a healthy state with passing tests, which channels are available for obtain the tool, which version number is current, and how many times the software has been downloaded---they provide quick links to a variety of useful integrated services.
+Your README.md should include:
 
-Some useful badges:
-- [AppVeyor badge](https://www.appveyor.com/docs/status-badges/)
-- [pypi version and downloads badges](http://codeinthehole.com/writing/pypi-readme-badges/)
-- [Anaconda Cloud version and download badge](https://anaconda.org/anaconda/anaconda/badges)
-- [Depsy badge](http://blog.impactstory.org/introducing-depsy/)
-- [Zenodo DOI badge](https://guides.github.com/activities/citable-code/)
+- What your project can do
+- How to install it
+- Requirements
+- How to use it
+- License information
+- Where to ask questions
 
+### Docstrings
 
-- **Use Docstring Documentation**: Adhere to PEP 257 guidelines for docstring conventions, ensuring clear and consistent documentation throughout the codebase.
-- **Automate Documentation Checks**: Integrate tools like Docsig, Interrogate, and Pydocstyle to automate documentation validation and enforce consistency.
-  - **Docsig**: Checks that the docstring of a function matches its signature, ensuring consistency and accuracy. `docsig -C -D -m -N -o -p .`
-  - **Interrogate**: Automates the validation of documentation against the code it documents, ensuring accuracy and completeness. `interrogate -O -vv .`
-  - **Pydocstyle**: Enforces adherence to docstring conventions, enhancing code readability and maintainability. `pydocstyle .`
-- **Parameter Definition and Documentation**: Every function parameter should be clearly defined with appropriate types and descriptive comments, enhancing maintainability and ease of use. The above tools can help enforce these practices. To install these tools, use `pip install docsig interrogate pydocstyle`.
+Use docstrings to document classes, methods, and functions. Follow the PEP 257 guidelines for consistency.
 
-There are many tools that can be used to write documentation. The easiest to start with is the GitHub wiki, which uses markdown syntax just like the rest of GitHub.
+Example of a well-documented function:
 
-### Linting
+```python
+def calculate_area(length: float, width: float) -> float:
+    """
+    Calculate the area of a rectangle.
 
-Linting is the process of running a program that will analyze code for potential errors and inconsistencies. Linters are tools that help ensure that your code is free from syntax errors, structural problems, and other common sources of errors that could lead to bugs in the execution of the program. They also enforce a consistent coding style, making sure that the code adheres to the guidelines and standards that a development team has set. This helps in maintaining the code readability and can significantly speed up the maintenance process as well as onboarding new developers.
+    Args:
+        length (float): The length of the rectangle.
+        width (float): The width of the rectangle.
 
+    Returns:
+        float: The area of the rectangle.
 
-### Type Hinting
+    Raises:
+        ValueError: If length or width is negative.
+    """
+    if length < 0 or width < 0:
+        raise ValueError("Length and width must be non-negative.")
+    return length * width
+```
 
-Type hinting is a practice introduced in Python 3.5 that involves specifying the expected data types of function arguments and return values. While Python is a dynamically typed language, adding type hints helps with static analysis of the code, improving its readability and reducing runtime errors. It allows developers and tools to infer how functions and classes are supposed to be used and can greatly aid in catching type-related mistakes early in the development cycle.
+### Tools for Documentation
 
+- **Sphinx**: A powerful documentation generator. It's especially useful for larger projects.
+- **GitHub Wiki**: An easy-to-use option for smaller projects or getting started with documentation.
 
-### Code Style 
+## Linting
 
-Code style refers to a set of guidelines or standards governing the writing of code. These standards can include rules about how to name variables, how to structure classes, the length of lines of code, and more. Adhering to a consistent code style improves the readability and maintainability of code, making it easier for other developers to read, understand, and collaborate on. It also promotes a unified look and feel of the codebase, which is crucial in reducing cognitive load when switching between different parts of the project.
+Linting helps maintain code quality by checking for potential errors and style inconsistencies.
 
-With these practices in place, developers can avoid common pitfalls in their code, making their software more robust and easier to manage. In the following section, we'll explore some essential tools that help enforce these good practices, enhancing your coding workflow and ensuring that your Python projects are of the highest quality.
+### Basic Linting Setup
 
-### Tools to achieve the above
+1. Install a linter (e.g., flake8):
+   ```
+   pip install flake8
+   ```
 
-- **Implement Linting Tools**: Utilize linting tools such as Flake8, Black, Bandit, Isort and Mypy to enforce coding standards and promote consistent code style across the project.
-  - **Bandit**: Identifies potential security issues in Python code. `bandit -r --skip=B404,B603,B602 .`
-  - **Black**: Formats code for consistent style, reducing the need for stylistic reviews. `black --check .`
-  - **Flake8**: Analyzes code to catch syntax errors, bugs, and stylistic errors. `flake8 --extend-ignore=D203,E203,E501,W503 .`
-  - **Isort**: Sorts imports alphabetically and automatically separates them into sections. `isort --profile black --check-only .`
-  - **Mypy**: Checks and enforces type hints, improving code reliability and aiding in early detection of type-related errors. First install missing types: `mypy --install-types --non-interactive`. Then run mypy: `mypy --ignore-missing-imports --disallow-any-generics --disallow-untyped-defs --no-implicit-optional --disallow-incomplete-defs .`
-  - **PyLint**: Another popular tool for enforcing coding standards and identifying potential issues. First install all required packages: `pip install $(find /app/linting/ -name "requirement*" -type f -printf ' -r %p')`. Then run PyLint on all files: `find . -type f -name "*.py" | xargs pylint -d C0301,R0913,W1202 --ignored-modules "rdkit"`
-- **Implementation**: These tools should be configured to run in a GitHub Actions workflow using local runners to ensure that every commit adheres to established coding standards. To install these tools, use `pip install flake8 black bandit isort mypy pylint`.
+2. Run the linter:
+   ```
+   flake8 your_project_directory
+   ```
 
-Look at an automated example [here](/GITHUB_ACTIONS.md##GitHub-Actions-Workflow-Example) that includes linting tools and a GitHub Actions workflow.
+3. Integrate with your text editor or IDE for real-time linting.
 
+### Example of Linting Issues
 
-### GitHub wiki
+```python
+# Bad: Inconsistent indentation and unused import
+import sys
 
-If you're already hosting your project on [GitHub](http://github.com), perhaps the easiest to start with is [Github wiki](https://help.github.com/articles/about-github-wikis/) which uses the same [GitHub markdown syntax](https://guides.github.com/features/mastering-markdown/).
-GitHub wikis are [version controlled](https://help.github.com/articles/viewing-a-wiki-s-history-of-changes/), and can even be [edited like a standard Git repository](https://help.github.com/articles/adding-and-editing-wiki-pages-locally/).
+def badfunction( x ):
+    y = x + 1
+        return y  # Indentation error
 
-Helpful guide on GitHub wikis:
-https://guides.github.com/features/wikis/
+# Good: Corrected version
+def good_function(x):
+    return x + 1
+```
 
-Some good examples of wiki-based documentation:
-* [`D3.js`](https://github.com/d3/d3/wiki): https://github.com/d3/d3/wiki
+For more advanced linting setup, including integration with GitHub Actions, refer to our [GitHub Actions guide](./GITHUB_ACTIONS.md).
 
-### Sphinx
+## Type Hinting
 
-If you need something slightly more powerful, consider using [Sphinx](http://www.sphinx-doc.org/en/1.4.8/), which has excellent support for producing beautiful Python documentation.
-From the same documentation source, you can build both HTML (online) and PDF (offline) versions, among [many others supported](http://www.sphinx-doc.org/en/1.4.8/builders.html).
+Type hinting improves code readability and helps catch type-related errors early.
 
-Hosting a [sphinx](http://www.sphinx-doc.org/en/1.4.8/) project can be tricky on its own, but is almost trivial if you have a public GitHub repository, since you can use [Read the Docs](https://docs.readthedocs.io/en/latest/getting_started.html) (RTD), which automatically rebuilds and hosts the documentation every time you commit to your repository.
-This [template](https://github.com/readthedocs/template) and this [tutorial](http://www.sphinx-doc.org/en/stable/tutorial.html) can help you easily get started.
+### Basic Type Hinting
 
-If you're using [`conda`](http://conda.pydata.org/docs/) for your code, you may want to check out [this step by step guide](https://github.com/choderalab/Protons/blob/master/howto-documentation.rst) on setting up a `conda` project with [RTD](https://readthedocs.org).
+```python
+from typing import List, Dict, Optional
 
-Some good examples of Sphinx documentation:
+def process_data(data: List[Dict[str, int]], factor: Optional[float] = None) -> List[float]:
+    """
+    Process a list of dictionaries containing integer values.
 
-* Sphinx docs, hosted on Read the Docs: [protons](http://protons.readthedocs.io) | [ensembler](http://ensembler.readthedocs.io)
-* Sphinx docs, built by travis and hosted on S3: [openmm](http://docs.openmm.org/7.1.0/userguide/index.html) | [mdtraj](http://mdtraj.org/) | [pymbar](http://pymbar.org/) | [yank](http://getyank.org) | [pymc](https://github.com/pymc-devs/pymc/tree/master/docs)
+    Args:
+        data (List[Dict[str, int]]): A list of dictionaries with string keys and integer values.
+        factor (Optional[float]): A multiplication factor. Defaults to None.
 
-### Other documentation schemes
+    Returns:
+        List[float]: A list of processed values.
+    """
+    result: List[float] = []
+    for item in data:
+        for value in item.values():
+            processed_value = float(value)
+            if factor is not None:
+                processed_value *= factor
+            result.append(processed_value)
+    return result
 
-* [readme.io](http://readme.io): A collaborative system for writing documentation
-* [GitBook](https://www.gitbook.com): An online collaborative publishing toolchain
+# Usage
+sample_data: List[Dict[str, int]] = [{"a": 1, "b": 2}, {"c": 3, "d": 4}]
+processed_result: List[float] = process_data(sample_data, factor=1.5)
+print(processed_result)  # Output: [1.5, 3.0, 4.5, 6.0]
+```
 
-__Next Chapter:__ [__Packaging and Continuous Deployment__](/PACKAGING.md)
+### Type Checking
+
+Use a tool like `mypy` to check for type consistency:
+
+```
+pip install mypy
+mypy your_script.py
+```
+
+## Best Practices
+
+1. Document as you code, don't leave it for later.
+2. Use consistent formatting in your documentation.
+3. Run linters and type checkers regularly, ideally as part of your development workflow.
+4. Keep your documentation up-to-date as your code evolves.
+
+For more detailed information on documentation tools and advanced linting setups, refer to our [GitHub Actions guide](./GITHUB_ACTIONS.md).
+
+Next Chapter: [Packaging and Continuous Deployment](./PACKAGING.md)
