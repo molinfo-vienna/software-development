@@ -17,18 +17,18 @@ This guide is designed to help everyone set up a molecular informatics project i
 
 ### Essential Practices (For Everyone)
 1. [Project Structure](./PROJECT_STRUCTURE.md)
-2. [Documentation, Code Style, and Linting](./DOCUMENTATION.md)
-3. [Version Control Basics](./VERSION_CONTROL.md)
-4. [Testing Fundamentals](./TEST)
-5. [Continues Integration (CI)](./CI.md)
-5. [IDE Setup for Beginners](./IDE.md)
+2. [Documentation](./DOCUMENTATION.md)
+3. [Linting](./LINTING.md)
+4. [Version Control Basics](./VERSION_CONTROL.md)
+5. [Testing Fundamentals](./TEST)
+6. [Continues Integration (CI)](./CI.md)
+7. [IDE Setup for Beginners](./IDE.md)
 
 ### Advanced Topics (For Deeper Exploration)
 7. [Packaging and Distribution](./PACKAGING.md)
 8. [Advanced Continuous Integration (CI)](./ADVANCED_CI_CD.md)
-9. [GitHub Actions](./ADVANCED_CI_CD.md##Best_Practices_for_CI/CD)
-10. [Licensing](./LICENCING.md)
-11. [Machine Learning Resources](./ML.md)
+9. [Licensing](./LICENCING.md)
+10. [Machine Learning Resources](./ML.md)
 
 ## Getting Started
 
@@ -44,11 +44,14 @@ For those looking to dive deeper or contribute to more complex projects, check o
 
 ## Minimum Requirements for CD-Lab MIB
 
-When working on code in the CD-Lab Molecular Informatics in the Biosciences, please ensure you follow these minimum requirements:
+When working on code in the CD-Lab Molecular Informatics in the Biosciences, please ensure you follow these minimum requirements. A [template](./TEAMPLATE.md) is provided to ensure all of these points (you can also checkout this [repo](https://github.com/choderalab/openmmtools?tab=readme-ov-file)). It should be copied to your project and used there.
 
-1. Adhere to the [CI/CD Guidelines](./CI.md) and the [advanced](./ADVANCED_CI_CD.md) section for each new project.
-2. Implement [linting](./LINTING.md), [good documentation](./DOCUMENTATION.md), and [packaging](./PACKAGING.md) for your Python projects.
-3. Use pip package manager over conda when possible.
+1. Use the specified linters isort, black and pylint.
+2. Use the specified documentation check with pydocstyle
+3. Make sure the test coverage is above 80%.
+4. Distribute your library as a package. For details see the [packaging](./PACKAGING.md) section
+
+For further reading see also the sections [CI/CD Guidelines](./CI.md), [advanced](./ADVANCED_CI_CD.md), [linting](./LINTING.md), [good documentation](./DOCUMENTATION.md).
 
 ## Administrative Information
 

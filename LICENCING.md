@@ -126,4 +126,5 @@ From the OSI FAQ:
 
 Next is the issue of license compatibility. In science, we need to be able to incorporate each other's contributions in order to make full use of the body of scientific knowledge. Certainly, we don't want licensing concerns to interfere with scientific productivity. In general, the permissive licenses are not a serious concern for compatibility with derivative works. However, the copyleft licenses may pose an issue; for more information on compatibility with GPL-style licenses, see [this page](https://www.gnu.org/licenses/license-list.en.html).
 
+__Next Chapter:__ [__Machine Learning Resources__](/ML.md)
 __Back:__ [__README__](/README.md)

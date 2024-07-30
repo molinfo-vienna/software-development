@@ -70,14 +70,34 @@ This workflow does the following:
 9. Builds the package
 10. Publishes to PyPI if the event is a push to main
 
+## Noteworthy comments
+
+The most important tools are:
+
+* pylint
+* pydocstyle
+* coverage
+* black
+* isort
+
+`Black` and isort come basically for free, since they only re-formart your code.
+
+`pylint` is probably the most comprehensive linter and should catch most linting problems.
+
+`pydocstyle` helps to have consistent doc-string throughout the project.
+
+The test coverage from the `coverage` package can give very valuable insides while developing/writing test and is a quality measure for a project. Also, a minimum threshold for code coverage can be set in the CI/CD pipeline to ensure high coverage.
+
+A project passing a CI/CD template with these packages is already a trustworthy project.
+
 ## Customizing the Workflow
 
 You can customize this workflow based on your project's needs. For example:
 
-- Add multiple Python versions for testing
-- Include coverage reporting
-- Add deployment steps for different environments (staging, production)
-- Integrate with other services (e.g., Docker, AWS)
+* Add multiple Python versions for testing
+* Include coverage reporting
+* Add deployment steps for different environments (staging, production)
+* Integrate with other services (e.g., Docker, AWS)
 
 ### CI/CD services
 
@@ -85,7 +105,7 @@ There are many CI/CD services out there — such as [GitHub Actions](https://doc
 We recommend using GitHub Actions, which is a service for executing CI/CD workflows for software stored in a GitHub repository.
 Github Actions offers integrated [CI](https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment) and [CD](https://docs.github.com/en/actions/deployment/about-deployments/about-continuous-deployment) workflows.
 
-In order to get to know GitHub Actions we recommend the official [Understaind GitHub Actions homepage](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) as well as the [building and testing python code](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) GitHub Actions site.
+In order to get to know GitHub Actions we recommend the official [Understand GitHub Actions homepage](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) as well as the [building and testing python code](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python) GitHub Actions site.
 Another good resource is the [Python Packages homepage](https://py-pkgs.org/08-ci-cd.html) for more details, key concepts, and examples.
 
 One important note is that when using self hosted runners `ALWAYS` use private repos! Please read the security concerns [here](https://docs.github.com/en/actions/hosting-your-own-runners/about-self-hosted-runners#self-hosted-runner-security).
