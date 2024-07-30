@@ -130,7 +130,7 @@ python -m build
 ## Further Reading
 
 For more information, refer to the following sections:
-- [CI/CD Guidelines](./CI.md)
-- [Advanced Techniques](./ADVANCED_CI_CD.md)
-- [Linting](./LINTING.md)
-- [Good Documentation Practices](./DOCUMENTATION.md)
+- [CI/CD Guidelines](/CI.md)
+- [Advanced Techniques](/ADVANCED_CI_CD.md)
+- [Linting](/LINTING.md)
+- [Good Documentation Practices](/DOCUMENTATION.md)
