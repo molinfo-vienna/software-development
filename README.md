@@ -44,7 +44,7 @@ For those looking to dive deeper or contribute to more complex projects, check o
 
 ## Minimum Requirements for CD-Lab MIB
 
-When working on code in the CD-Lab Molecular Informatics in the Biosciences, please ensure you follow these minimum requirements. A [template](./TEAMPLATE.md) is provided to ensure all of these points (you can also checkout this [repo](https://github.com/choderalab/openmmtools?tab=readme-ov-file)). It should be copied to your project and used there.
+When working on code in the CD-Lab Molecular Informatics in the Biosciences, please ensure you follow these minimum requirements. A [template](/template/README.md) is provided to ensure all of these points (you can also checkout this [repo](https://github.com/choderalab/openmmtools?tab=readme-ov-file)). It should be copied to your project and used there.
 
 1. Use the specified linters isort, black and pylint.
 2. Use the specified documentation check with pydocstyle
