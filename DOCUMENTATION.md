@@ -45,5 +45,5 @@ def calculate_area(length: float, width: float) -> float:
 - **GitHub Wiki**: An easy-to-use option for smaller projects or getting started with documentation.
 
 
-__Next Chapter:__ [__VERSION_CONTROL__](/LINTING.md)
+__Next Chapter:__ [__LINTING__](/LINTING.md)
 __Back:__ [__README__](/README.md)
