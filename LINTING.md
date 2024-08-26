@@ -2,6 +2,9 @@
 
 Linting is the process of running a program that will analyze code for potential errors and inconsistencies. Linters are tools that help ensure that your code is free from syntax errors, structural problems, and other common sources of errors that could lead to bugs in the execution of the program. They also enforce a consistent coding style, making sure that the code adheres to the guidelines and standards that a development team has set. This helps in maintaining the code readability and can significantly speed up the maintenance process as well as onboarding new developers.
 
+## Template
+
+Please also check out a working template [here](https://github.com/basf/cheminformatics_ci_cd_template)
 
 ### Basic Linting Setup
 

@@ -161,5 +161,9 @@ Here are a few tips on how to make the most out of GitHub Copilot:
 
 GitHub Copilot is particularly useful for writing boilerplate code, exploring new libraries and frameworks, and learning best practices in software development. As you use Copilot, you'll likely find that it not only helps you code more efficiently but also educates you on different aspects of programming and software development.
 
+## Template
+
+Please also check out a working template [here](https://github.com/basf/cheminformatics_ci_cd_template)
+
 __Next Chapter:__ [__Licencing__](/LICENCING.md)
 __Back:__ [__README__](/README.md)

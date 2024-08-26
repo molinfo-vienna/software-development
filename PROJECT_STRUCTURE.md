@@ -2,6 +2,10 @@
 
 Giving structure to your project is of utmost importance - no matter what you're doing. A well-organized project structure enhances readability, maintainability, and collaboration.
 
+## Template
+
+Please also check out a working template [here](https://github.com/basf/cheminformatics_ci_cd_template)
+
 ## Basic Project Structure
 
 A typical Python project structure might look like this:
@@ -9,10 +13,9 @@ A typical Python project structure might look like this:
 ```
 project/
     docs/
-    src/
-        project_name/
-            __init__.py
-            main.py
+    project_name/
+        __init__.py
+        main.py
     tests/
         __init__.py
         test_main.py
@@ -30,12 +33,12 @@ project/
 The root directory should contain:
 
 - `LICENSE`: Specifies how others can use your code.
-- `README.md`: Provides an overview of your project, installation instructions, and basic usage.
-- `setup.py`: Used for packaging and distributing your project.
-- `.gitignore`: Tells Git which files to ignore.
-- `requirements.txt`: Lists the project dependencies.
+- `README.md`: Provides an overview of your project, installation instructions, and basic usage. 
+- `setup.py`: Used for packaging and distributing your project. More can be read about [here](/SETUP.md).
+- `.gitignore`: Tells Git which files to ignore. More can be read about [here](/GITIGNORE.md).
+- `requirements.txt`: Lists the project dependencies. More can be read about [here](/REQU.md).
 
-### Source Code Directory (`src/`)
+### Source Code Directory (`project_name/`)
 
 Place your main package code here. This separation helps prevent import issues and clearly distinguishes your package code from other project files.
 
@@ -46,6 +49,10 @@ Contains all your test files. Keeping tests separate from your source code is a 
 ### Documentation (`docs/`)
 
 Store your project documentation here. Consider using tools like Sphinx for generating comprehensive documentation.
+
+### ___init___.py
+
+More can be read about [here](/INIT.md)
 
 ## Using Cookiecutter Templates
 
@@ -76,5 +83,5 @@ cookiecutter gh:molssi/cookiecutter-cms
 
 By following these guidelines, you'll create a clean, organized project structure that's easy to navigate and maintain.
 
-__Next Chapter:__ [__Documentation, Code Style, and Linting__](/DOCUMENTATION.md)
+__Next Chapter:__ [__Documentation__](/DOCUMENTATION.md)
 __Back:__ [__README__](/README.md)

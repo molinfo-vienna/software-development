@@ -58,5 +58,9 @@ This simple workflow will run your tests on every push and pull request.
 
 For more advanced CI setups, including linting, type checking, and deployment, refer to our [Advanced CI/CD with GitHub Actions guide](./ADVANCED_CI_CD.md).
 
+## Template
+
+Please also check out a working template [here](https://github.com/basf/cheminformatics_ci_cd_template)
+
 __Next Chapter:__ [__IDE_Setup__](/IDE.md)
 __Back:__ [__README__](/README.md)

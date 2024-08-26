@@ -130,5 +130,9 @@ The [Omnia](http://www.omnia.md/) software consortium was formed to make deploym
 The [Omnia build system](https://github.com/omnia-md/conda-recipes/blob/master/README.md) is similar to [Conda-Forge](https://conda-forge.github.io/), but uses specialized build infrastructure that provides CUDA and OpenCL capabilities.
 Instructions for contributing a recipe for building and deploying your code through Omnia can be found [here](https://github.com/omnia-md/conda-recipes/blob/master/README.md#contributing-a-recipe).
 
+## Template
+
+Please also check out a working template [here](https://github.com/basf/cheminformatics_ci_cd_template)
+
 __Next Chapter:__ [__Advanced_CI_CD__](/ADVANCED_CI_CD.md)
 __Back:__ [__README__](/README.md)
