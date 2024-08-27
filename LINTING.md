@@ -1,34 +1,92 @@
-## Introduction to Linting, Type Hinting, and Code Style in Python
-
-This is a minimum requirement for your projects working together in the CD-MIB (Another requirement can be found here [this](/GITHUB_ACTIONS.md)).
-
-In the world of software development, maintaining readability, consistency, and error-free code are paramount. This is where the practices of linting, type hinting, and adhering to a code style come into play, especially in dynamic programming languages like Python. These practices not only enhance code quality and maintainability but also streamline collaboration across large teams. Let's delve into what each of these terms means and why they are crucial for writing good Python code.
-
-### Linting
+# Introduction to Linting and Code Style
 
 Linting is the process of running a program that will analyze code for potential errors and inconsistencies. Linters are tools that help ensure that your code is free from syntax errors, structural problems, and other common sources of errors that could lead to bugs in the execution of the program. They also enforce a consistent coding style, making sure that the code adheres to the guidelines and standards that a development team has set. This helps in maintaining the code readability and can significantly speed up the maintenance process as well as onboarding new developers.
 
+## Template
 
-### Type Hinting
+Please also check out a working template [here](https://github.com/basf/cheminformatics_ci_cd_template)
 
-Type hinting is a practice introduced in Python 3.5 that involves specifying the expected data types of function arguments and return values. While Python is a dynamically typed language, adding type hints helps with static analysis of the code, improving its readability and reducing runtime errors. It allows developers and tools to infer how functions and classes are supposed to be used and can greatly aid in catching type-related mistakes early in the development cycle.
+### Basic Linting Setup
 
+1. Install a linter (e.g., flake8):
+   ```
+   pip install flake8
+   ```
 
-### Code Style 
+2. Run the linter:
+   ```
+   flake8 your_project_directory
+   ```
 
-Code style refers to a set of guidelines or standards governing the writing of code. These standards can include rules about how to name variables, how to structure classes, the length of lines of code, and more. Adhering to a consistent code style improves the readability and maintainability of code, making it easier for other developers to read, understand, and collaborate on. It also promotes a unified look and feel of the codebase, which is crucial in reducing cognitive load when switching between different parts of the project.
+3. Integrate with your text editor or IDE for real-time linting.
 
-With these practices in place, developers can avoid common pitfalls in their code, making their software more robust and easier to manage. In the following section, we'll explore some essential tools that help enforce these good practices, enhancing your coding workflow and ensuring that your Python projects are of the highest quality.
+### Example of Linting Issues
 
-### Tools to achieve the above
+```python
+# Bad: Inconsistent indentation and unused import
+import sys
 
-- **Implement Linting Tools**: Utilize linting tools such as Flake8, Black, Bandit, Isort and Mypy to enforce coding standards and promote consistent code style across the project.
-  - **Bandit**: Identifies potential security issues in Python code. `bandit -r --skip=B404,B603,B602 .`
-  - **Black**: Formats code for consistent style, reducing the need for stylistic reviews. `black --check .`
-  - **Flake8**: Analyzes code to catch syntax errors, bugs, and stylistic errors. `flake8 --extend-ignore=D203,E203,E501,W503 .`
-  - **Isort**: Sorts imports alphabetically and automatically separates them into sections. `isort --profile black --check-only .`
-  - **Mypy**: Checks and enforces type hints, improving code reliability and aiding in early detection of type-related errors. First install missing types: `mypy --install-types --non-interactive`. Then run mypy: `mypy --ignore-missing-imports --disallow-any-generics --disallow-untyped-defs --no-implicit-optional --disallow-incomplete-defs .`
-  - **PyLint**: Another popular tool for enforcing coding standards and identifying potential issues. First install all required packages: `pip install $(find /app/linting/ -name "requirement*" -type f -printf ' -r %p')`. Then run PyLint on all files: `find . -type f -name "*.py" | xargs pylint -d C0301,R0913,W1202 --ignored-modules "rdkit"`
-- **Implementation**: These tools should be configured to run in a GitHub Actions workflow using local runners to ensure that every commit adheres to established coding standards. To install these tools, use `pip install flake8 black bandit isort mypy pylint`.
+def badfunction( x ):
+    y = x + 1
+        return y  # Indentation error
 
-Look at an automated example [here](/GITHUB_ACTIONS.md##GitHub-Actions-Workflow-Example) that includes linting tools and a GitHub Actions workflow.
+# Good: Corrected version
+def good_function(x):
+    return x + 1
+```
+
+## Type Hinting
+
+Type hinting improves code readability and helps catch type-related errors early.
+
+### Basic Type Hinting
+
+```python
+from typing import List, Dict, Optional
+
+def process_data(data: List[Dict[str, int]], factor: Optional[float] = None) -> List[float]:
+    """
+    Process a list of dictionaries containing integer values.
+
+    Args:
+        data (List[Dict[str, int]]): A list of dictionaries with string keys and integer values.
+        factor (Optional[float]): A multiplication factor. Defaults to None.
+
+    Returns:
+        List[float]: A list of processed values.
+    """
+    result: List[float] = []
+    for item in data:
+        for value in item.values():
+            processed_value = float(value)
+            if factor is not None:
+                processed_value *= factor
+            result.append(processed_value)
+    return result
+
+# Usage
+sample_data: List[Dict[str, int]] = [{"a": 1, "b": 2}, {"c": 3, "d": 4}]
+processed_result: List[float] = process_data(sample_data, factor=1.5)
+print(processed_result)  # Output: [1.5, 3.0, 4.5, 6.0]
+```
+
+### Type Checking
+
+Use a tool like `mypy` to check for type consistency:
+
+```
+pip install mypy
+mypy your_script.py
+```
+
+## Best Practices
+
+1. Document as you code, don't leave it for later.
+2. Use consistent formatting in your documentation.
+3. Run linters and type checkers regularly, ideally as part of your development workflow.
+4. Keep your documentation up-to-date as your code evolves.
+
+For more advanced linting setup, including integration with GitHub Actions, refer to our [GitHub Actions guide](./ADVANCED_CI_CD.md).
+
+__Next Chapter:__ [__VERSION_CONTROL__](/VERSION_CONTROL.md)
+__Back:__ [__README__](/README.md)

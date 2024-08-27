@@ -50,5 +50,10 @@ There are several ways of how to approach a consisten collaboration, however, we
 
 If there are merge conflicts, dont worry, they can be fixed - you can start with reading on this page under [Basic Merge Conflicts](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 
+## Template
 
-__Next Chapter:__ [__Continuous Integration, Continuous Delivery, Continuous Deployment, and Testing__](/CI_CD_TEST.md)
+Please also check out a working template [here](https://github.com/basf/cheminformatics_ci_cd_template)
+
+
+__Next Chapter:__ [__Testing__](/TEST.md)
+__Back:__ [__README__](/README.md)

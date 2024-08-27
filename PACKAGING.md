@@ -36,10 +36,14 @@ Packages with compiled components or binary libraries that must be distributed a
 While this is changing with wider support for Python wheels (see [PEP 427](https://www.python.org/dev/peps/pep-0427/), [PEP 491](https://www.python.org/dev/peps/pep-0491/), and [PEP 513](https://www.python.org/dev/peps/pep-0513/)), the recommended approach for codes that depend on platform-specific libraries is the `conda` scheme described below.
 
 ### Preparing Your Package
+
 **Structure Your Project**: Organize your project files in a directory with a clear structure. Typically, this includes:
    - A `<module_name>/` directory where your package code resides.
    - A `tests/` directory for your unit tests.
    - Necessary files like `README.md`, `LICENSE`, `pyproject.toml`, and `requirements.txt`.
+
+Check out at the details about [gitignore](/GITIGNORE.md), [pyproject.toml](/PROJECT_TOML.md), [setup.cfg](/SETUP.md), [__init__.py](/INIT.md), and [requirement.txt](/REQU.md).
+Also look into the [template](/template/README.md) for a project.
 
 **Create a `requirements.txt` File**: This file should list all the Python packages that your code depends on.
 
@@ -126,4 +130,9 @@ The [Omnia](http://www.omnia.md/) software consortium was formed to make deploym
 The [Omnia build system](https://github.com/omnia-md/conda-recipes/blob/master/README.md) is similar to [Conda-Forge](https://conda-forge.github.io/), but uses specialized build infrastructure that provides CUDA and OpenCL capabilities.
 Instructions for contributing a recipe for building and deploying your code through Omnia can be found [here](https://github.com/omnia-md/conda-recipes/blob/master/README.md#contributing-a-recipe).
 
-__Next Chapter:__ [__Licencing__](/LICENCING.md)
+## Template
+
+Please also check out a working template [here](https://github.com/basf/cheminformatics_ci_cd_template)
+
+__Next Chapter:__ [__Advanced_CI_CD__](/ADVANCED_CI_CD.md)
+__Back:__ [__README__](/README.md)
