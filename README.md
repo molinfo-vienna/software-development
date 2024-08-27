@@ -99,4 +99,4 @@ Happy coding!
 
 ## Contributers
 
-We also want to thank the BASF, in particular [Conrad Stork](https://github.com/conrad-stork-basf) and [Jochen Siege](https://github.com/JochenSiegWork) for their contributions.
+We also want to thank the BASF, in particular [Conrad Stork](https://github.com/conrad-stork-basf) and [Jochen Sieg](https://github.com/JochenSiegWork) for their contributions.
