@@ -24,6 +24,9 @@ This guide is designed to help everyone set up a molecular informatics project i
 6. [Continues Integration (CI)](./CI.md)
 7. [IDE Setup for Beginners](./IDE.md)
 
+### Minimum Requirements for the CD-Lab Members 
+1. [See requirements](#minimum-requirements-for-cd-lab-mib)
+
 ### Advanced Topics (For Deeper Exploration)
 7. [Packaging and Distribution](./PACKAGING.md)
 8. [Advanced Continuous Integration (CI)](./ADVANCED_CI_CD.md)
