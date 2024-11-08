@@ -48,7 +48,7 @@ When working on code in the CD-Lab Molecular Informatics in the Biosciences, ple
 
 1. Use the specified linters isort, black and pylint.
 2. Use the specified documentation check with pydocstyle
-3. Make sure the test coverage is above 80%.
+3. Make sure the test coverage is sufficient (include most common usecases).
 4. Distribute your library as a package. For details see the [packaging](./PACKAGING.md) section
 
 For further reading see also the sections [CI/CD Guidelines](./CI.md), [advanced](./ADVANCED_CI_CD.md), [linting](./LINTING.md), [good documentation](./DOCUMENTATION.md).
